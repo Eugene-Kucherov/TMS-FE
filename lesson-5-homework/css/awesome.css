@@ -1,0 +1,49 @@
+.awesome {
+  padding: 50px 0px;
+  background-color: #e5e5e5;
+}
+.awesome-article {
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.separator {
+  margin: 0px auto;
+  padding: 0px;
+  height: 0px;
+  border: none;
+  border-top: 1px solid #ec7979;
+  width: 170px;
+}
+.awesome-description {
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  margin: 40px 0px 71px 0px;
+}
+.awesome-reasons {
+  display: flex;
+}
+.awesome-reasons__item {
+  text-align: center;
+}
+.awesome-reasons__item:not(:last-child) {
+  margin-right: 30px;
+}
+.awesome-reason-head {
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 700;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.awesome-reason-text {
+  font-size: 18px;
+}

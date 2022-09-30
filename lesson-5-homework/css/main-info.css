@@ -1,0 +1,111 @@
+.main-info {
+  position: relative;
+  overflow: hidden;
+  height: 1000px;
+  background: url("../images/image.jpg");
+  background-size: cover;
+  z-index: 3;
+}
+.main-info::before {
+  background: rgba(0, 0, 0, 0.5);
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.main-info-content {
+  display: flex;
+  margin-top: 137px;
+}
+.slogan {
+  font-size: 48px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 73px 30px 55px 0px;
+}
+.main-separator {
+  padding: 0px;
+  height: 0px;
+  border: none;
+  border-top: 1px solid #ffffff;
+  width: 116px;
+}
+.slogan-description {
+  color: #ffffff;
+  margin: 42px auto;
+}
+.main-info-button {
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 600;
+  width: 183px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+}
+.main-info-button:hover {
+  border: 2px solid #ec7979;
+  color: #ec7979;
+}
+.main-info-button:active {
+  border: 2px solid #ab4949;
+  background: #ab4949;
+  color: #ffffff;
+}
+.main-info-form {
+  width: 470px;
+  height: 450px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.form-body {
+  border: none;
+}
+.form-head {
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 700;
+  align-items: center;
+  display: flex;
+  width: 367px;
+  height: 90px;
+  justify-content: center;
+  margin: 0px 50px 45px 53px;
+}
+.free-text {
+  color: #ec7979;
+}
+.form-body__item {
+  width: 370px;
+  height: 38px;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  font-size: 14px;
+  font-family: "Open Sans";
+}
+.main-info-form-button {
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 600;
+  width: 470px;
+  height: 60px;
+  display: inline-block;
+  vertical-align: bottom;
+  border: none;
+  background-color: #ec7979;
+  color: #ffffff;
+  cursor: pointer;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.main-info-form-button:hover {
+  background-color: #ab4949;
+}
+.main-info-form-button:active {
+  background-color: #ec7979;
+  box-shadow: inset 0px 0px 10px #ab4949;
+}

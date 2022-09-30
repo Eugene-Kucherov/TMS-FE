@@ -1,0 +1,35 @@
+header {
+  background-color: #000000;
+}
+.header-wrap {
+  display: flex;
+  align-items: center;
+}
+.header-logo img {
+  vertical-align: bottom;
+}
+.navigation {
+  margin: 1px 0px 1px auto;
+}
+.navigation-list {
+  display: flex;
+}
+.navigation-list__item:not(:last-child) {
+  margin-right: 28px;
+}
+.navigation-list__item a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation-list__item:hover {
+  background-color: #ec7979;
+}
+.navigation-list__item:active {
+  background-color: #ab4949;
+}

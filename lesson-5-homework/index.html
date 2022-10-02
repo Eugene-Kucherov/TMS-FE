@@ -10,10 +10,10 @@
 </head>
 
 <body>
-    <header>
+    <header class="axit-head">
         <div class="container">
             <div class="header-wrap">
-                <div class="header-logo"><a href="#" class="logo-link"><img src="./images/logo.png" alt="Logo"></a>
+                <div class="header-logo"><a href="#"><img src="./images/logo.png" alt="Logo"></a>
                 </div>
                 <nav class="navigation">
                     <ul class="navigation-list">
@@ -23,41 +23,61 @@
                         <li class="navigation-list__item"><a href="#">Reviews</a></li>
                         <li class="navigation-list__item"><a href="#">Contact</a></li>
                     </ul>
+                </nav>
             </div>
-            </nav>
         </div>
     </header>
-    <section class="main-info">
-        <div class="container">
-            <div class="main-info-content">
-                <div class="main-info-text">
-                    <div class="main-logo"><img src="./images/logo-main.png" alt=""></div>
-                    <h1 class="slogan">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
-                    <hr class="main-separator" />
-                    <p class="slogan-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <button class="main-info-button">Download</button>
-                </div>
-                <div class="main-info-form">
-                    <form action="#" method="get">
-                        <fieldset class="form-body">
-                            <span class="form-head">Try Your&nbsp<span class="free-text">FREE
-                                </span>&nbspTrial Today
+    <div class="background">
+        <section class="main-info">
+            <div class="container">
+                <div class="main-content">
+                    <div class="main-text">
+                        <div class="main-text__logo"><img src="./images/logo-main.png" alt=""></div>
+                        <h1 class="main-text__slogan">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+                        <hr class="main-text__separator" />
+                        <div class="main-description">
+                            <p class="main-description__head">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </p>
+                            <button class="main-description__button">Download</button>
+                        </div>
+                    </div>
+                    <form class="main-form" action="#" method="get">
+                        <fieldset class="main-form-body">
+                            <span class="main-form-body__head">Try Your <span class="free-text">FREE</span> Trial Today
                             </span>
-                            <input type="text" id="fname" class="form-body__item" name="Name" placeholder="Name"><br>
-                            <input type="email" id="pemail" class="form-body__item" name="Email"
+                            <input type="text" id="fname" class="main-form-body__item" name="Name"
+                                placeholder="Name"><br>
+                            <input type="email" id="pemail" class="main-form-body__item" name="Email"
                                 placeholder="Email"><br>
-                            <input type="password" id="ppassword" class="form-body__item" name="Password"
+                            <input type="password" id="ppassword" class="main-form-body__item" name="Password"
                                 placeholder="Password"><br>
                         </fieldset>
-                        <button class="main-info-form-button" type="submit">Get Started</button>
+                        <button class="main-form-body__button" type="submit">Get Started</button>
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="social-info">
+        </section>
+    </div>
+    <section class="social-media">
         <div class="container">
-
+            <div class="social-media-wrap">
+                <div class="social-media-text">
+                    <h4 class="social-media-text__head">Social Media</h4>
+                    <p class="social-media-text__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aenean euismod bibendum laoreet.</p>
+                </div>
+                <div class="social-networks">
+                    <a href="#" class="social-networks__item"><img src="./images/facebook_icon.svg" alt="Facebook"></a>
+                    <a href="#" class="social-networks__item"><img src="./images/twitter_icon.svg" alt="Twitter"></a>
+                    <a href="#" class="social-networks__item"><img src="./images/linkedin_icon.svg" alt="LinkedIn"></a>
+                    <a href="#" class="social-networks__item"><img src="./images/pinterest_icon.svg"
+                            alt="Pinterest"></a>
+                    <a href="#" class="social-networks__item"><img src="./images/instagram_icon.svg"
+                            alt="Instagram"></a>
+                    <a href="#" class="social-networks__item"><img src="./images/github_icon.svg" alt="GitHub"></a>
+                    <a href="#" class="social-networks__item"><img src="./images/rss_icon.svg" alt="rss"></a>
+                </div>
+            </div>
         </div>
     </section>
     <section class="tabs">
@@ -71,73 +91,85 @@
                 <label for="tab3">TAB 3</label>
                 <div class="tab-content">
                     <div class="tab-description">
-                        <h3 class="tab-description-head">Tabs with soft transitioning effect.1</h3>
-                        <p class="tab-description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                            euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo
-                            commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
-                            parturient montes.</p>
-                        <p class="tab-description-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
-                        </p>
-                        <button class="tab-content-button">Download</button>
+                        <h3 class="tab-description__head">Tabs with soft transitioning effect.1</h3>
+                        <div class="tab-description-text">
+                            <p class="tab-description-text__item">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Aenean
+                                euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo
+                                commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                                parturient montes.</p>
+                            <p class="tab-description-text__item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                laoreet.
+                            </p>
+                        </div>
+                        <button class="tab-description__button">Download</button>
                     </div>
-                    <div class="tab-image"><img src="./images/Rectangle 111.jpg" alt=""></div>
+                    <div class="tab-content__image"><img src="./images/Rectangle 111.jpg" alt=""></div>
                 </div>
                 <div class="tab-content">
                     <div class="tab-description">
-                        <h3 class="tab-description-head">Tabs with soft transitioning effect.2</h3>
-                        <p class="tab-description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                            euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo
-                            commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
-                            parturient montes.</p>
-                        <p class="tab-description-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
-                        </p>
-                        <button class="tab-content-button">Download</button>
+                        <h3 class="tab-description__head">Tabs with soft transitioning effect.2</h3>
+                        <div class="tab-description-text">
+                            <p class="tab-description-text__item">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Aenean
+                                euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo
+                                commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                                parturient montes.</p>
+                            <p class="tab-description-text__item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                laoreet.
+                            </p>
+                        </div>
+                        <button class="tab-description__button">Download</button>
                     </div>
-                    <div class="tab-image"><img src="./images/Rectangle 111.jpg" alt=""></div>
+                    <div class="tab-content__image"><img src="./images/Rectangle 111.jpg" alt=""></div>
                 </div>
                 <div class="tab-content">
                     <div class="tab-description">
-                        <h3 class="tab-description-head">Tabs with soft transitioning effect.3</h3>
-                        <p class="tab-description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                            euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo
-                            commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
-                            parturient montes.</p>
-                        <p class="tab-description-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
-                        </p>
-                        <button class="tab-content-button">Download</button>
+                        <h3 class="tab-description__head">Tabs with soft transitioning effect.3</h3>
+                        <div class="tab-description-text">
+                            <p class="tab-description-text__item">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Aenean
+                                euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo
+                                commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                                parturient montes.</p>
+                            <p class="tab-description-text__item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                laoreet.
+                            </p>
+                        </div>
+                        <button class="tab-description__button">Download</button>
                     </div>
-                    <div class="tab-image"><img src="./images/Rectangle 111.jpg" alt=""></div>
+                    <div class="tab-content__image"><img src="./images/Rectangle 111.jpg" alt=""></div>
                 </div>
             </div>
         </div>
     </section>
     <section class="awesome">
         <div class="container">
-            <h2 class="awesome-article">WHY THIS IS AWESOME</h2>
+            <h2 class="awesome__article">WHY THIS IS AWESOME</h2>
             <hr class="separator" />
-            <h5 class="awesome-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+            <h5 class="awesome__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
             <div class="awesome-reasons">
-                <div class="awesome-reasons__item">
-                    <img src="./images/about_icon_1.png" alt="1-st Reason" class="awesome-reason-icon">
-                    <h4 class="awesome-reason-head">Thoughtful Design</h4>
-                    <p class="awesome-reason-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                <div class="awesome-reason">
+                    <div class="awesome-reason__picture"><img src="./images/about_icon_1.png" alt="1-st Reason"></div>
+                    <h4 class="awesome-reason__head">Thoughtful Design</h4>
+                    <p class="awesome-reason__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                         euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
                     </p>
                 </div>
-                <div class="awesome-reasons__item">
-                    <img src="./images/about_icon_2.png" alt="2-nd Reason" class="awesome-reason-icon">
-                    <h4 class="awesome-reason-head">Thoughtful Design</h4>
-                    <p class="awesome-reason-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                <div class="awesome-reason">
+                    <div class="awesome-reason__picture"><img src="./images/about_icon_2.png" alt="2-nd Reason"></div>
+                    <h4 class="awesome-reason__head">Thoughtful Design</h4>
+                    <p class="awesome-reason__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                         euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
                     </p>
                 </div>
-                <div class="awesome-reasons__item">
-                    <img src="./images/about_icon_3.png" alt="3-rd Reason" class="awesome-reason-icon">
-                    <h4 class="awesome-reason-head">Thoughtful Design</h4>
-                    <p class="awesome-reason-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                <div class="awesome-reason">
+                    <div class="awesome-reason__picture"><img src="./images/about_icon_3.png" alt="3-rd Reason"></div>
+                    <h4 class="awesome-reason__head">Thoughtful Design</h4>
+                    <p class="awesome-reason__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                         euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
                     </p>
                 </div>
@@ -151,37 +183,37 @@
             <p class="pricing-options__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div class="pricing-tables">
                 <div class="pricing-table">
-                    <div class="pricing-head">Basic</div>
-                    <div class="price">$10</div>
-                    <div class="option-description">Free for life</div>
-                    <div class="option-features">1 gb of space</div>
-                    <div class="option-features">1 gb of space</div>
-                    <div class="option-features">1 gb of space</div>
-                    <div class="option-features">1 gb of space</div>
-                    <div class="option-features">1 gb of space</div>
-                    <div class="option-features">1 gb of space</div>
+                    <div class="pricing-table__head">Basic</div>
+                    <div class="pricing-table__price">$10</div>
+                    <div class="pricing-table__description">Free for life</div>
+                    <div class="pricing-table__feature">1 gb of space</div>
+                    <div class="pricing-table__feature">1 gb of space</div>
+                    <div class="pricing-table__feature">1 gb of space</div>
+                    <div class="pricing-table__feature">1 gb of space</div>
+                    <div class="pricing-table__feature">1 gb of space</div>
+                    <div class="pricing-table__feature">1 gb of space</div>
+                </div>
+                <div class="pricing-table pricing-table--active">
+                    <div class="pricing-table__head">Optima</div>
+                    <div class="pricing-table__price">$20</div>
+                    <div class="pricing-table__description">Free for life</div>
+                    <div class="pricing-table__feature">1 gb of space</div>
+                    <div class="pricing-table__feature">1 gb of space</div>
+                    <div class="pricing-table__feature">1 gb of space</div>
+                    <div class="pricing-table__feature">1 gb of space</div>
+                    <div class="pricing-table__feature">1 gb of space</div>
+                    <div class="pricing-table__feature">1 gb of space</div>
                 </div>
                 <div class="pricing-table">
-                    <div class="pricing-head">Optima</div>
-                    <div class="price">$20</div>
-                    <div class="option-description">Free for life</div>
-                    <div class="option-features">1 gb of space</div>
-                    <div class="option-features">1 gb of space</div>
-                    <div class="option-features">1 gb of space</div>
-                    <div class="option-features">1 gb of space</div>
-                    <div class="option-features">1 gb of space</div>
-                    <div class="option-features">1 gb of space</div>
-                </div>
-                <div class="pricing-table">
-                    <div class="pricing-head">Pro</div>
-                    <div class="price">$30</div>
-                    <div class="option-description">Free for life</div>
-                    <div class="option-features">1 gb of space</div>
-                    <div class="option-features">1 gb of space</div>
-                    <div class="option-features">1 gb of space</div>
-                    <div class="option-features">1 gb of space</div>
-                    <div class="option-features">1 gb of space</div>
-                    <div class="option-features">1 gb of space</div>
+                    <div class="pricing-table__head">Pro</div>
+                    <div class="pricing-table__price">$30</div>
+                    <div class="pricing-table__description">Free for life</div>
+                    <div class="pricing-table__feature">1 gb of space</div>
+                    <div class="pricing-table__feature">1 gb of space</div>
+                    <div class="pricing-table__feature">1 gb of space</div>
+                    <div class="pricing-table__feature">1 gb of space</div>
+                    <div class="pricing-table__feature">1 gb of space</div>
+                    <div class="pricing-table__feature">1 gb of space</div>
                 </div>
             </div>
         </div>

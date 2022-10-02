@@ -1,0 +1,32 @@
+.social-media {
+  padding: 18px 0px;
+  background-color: #f8efef;
+}
+.social-media-wrap {
+  display: flex;
+  align-items: center;
+}
+.social-media-text {
+  max-width: 470px;
+}
+.social-media-text__head {
+  margin-bottom: 25px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+}
+.social-media-text__body {
+  font-size: 18px;
+  line-height: 22px;
+}
+.social-networks {
+  display: flex;
+  margin-left: auto;
+}
+.social-networks__item:not(:last-child) {
+  margin-right: 30px;
+}
+.social-networks__item img {
+  display: block;
+}

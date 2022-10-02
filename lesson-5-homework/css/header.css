@@ -1,35 +1,40 @@
-header {
+.axit-head {
   background-color: #000000;
+  padding: 1px 0px;
 }
 .header-wrap {
   display: flex;
-  align-items: center;
 }
 .header-logo img {
   vertical-align: bottom;
 }
 .navigation {
-  margin: 1px 0px 1px auto;
+  margin-left: auto;
 }
 .navigation-list {
   display: flex;
 }
-.navigation-list__item:not(:last-child) {
-  margin-right: 28px;
-}
 .navigation-list__item a {
+  font-family: "Open Sans";
   font-size: 14px;
+  line-height: 20px;
+  padding: 28px;
+  display: block;
   font-weight: 600;
   color: #ffffff;
   text-decoration: none;
-  display: inline-block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .navigation-list__item:hover {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
   background-color: #ec7979;
 }
 .navigation-list__item:active {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
   background-color: #ab4949;
 }

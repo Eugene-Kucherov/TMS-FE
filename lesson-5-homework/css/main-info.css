@@ -1,4 +1,7 @@
 .main-info {
+  padding: 207px 0px 185px 0px;
+}
+.background {
   position: relative;
   overflow: hidden;
   height: 1000px;
@@ -6,7 +9,7 @@
   background-size: cover;
   z-index: 3;
 }
-.main-info::before {
+.background::before {
   background: rgba(0, 0, 0, 0.5);
   content: "";
   position: absolute;
@@ -14,87 +17,105 @@
   width: 100%;
   z-index: -1;
 }
-.main-info-content {
+.main-content {
   display: flex;
-  margin-top: 137px;
+  justify-content: space-between;
 }
-.slogan {
+.main-text__logo {
+  max-width: 270px;
+  margin-bottom: 51px;
+}
+.main-text__logo img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.main-text__slogan {
   font-size: 48px;
   font-weight: 500;
+  line-height: 57px;
+  max-width: 670px;
   color: #ffffff;
-  margin: 73px 30px 55px 0px;
+  margin-bottom: 56px;
 }
-.main-separator {
+.main-text__separator {
   padding: 0px;
   height: 0px;
   border: none;
   border-top: 1px solid #ffffff;
-  width: 116px;
+  width: 170px;
+  margin-bottom: 42px;
 }
-.slogan-description {
+.main-description {
+  max-width: 270px;
+}
+.main-description__head {
+  font-size: 18px;
+  line-height: 22px;
   color: #ffffff;
-  margin: 42px auto;
+  margin-bottom: 42px;
+  width: 100%;
 }
-.main-info-button {
+.main-description__button {
   font-family: "Open Sans";
   font-size: 18px;
   font-weight: 600;
-  width: 183px;
-  height: 50px;
+  line-height: 25px;
+  width: 100%;
+  padding: 16px 0px;
   border: 2px solid #ffffff;
   color: #ffffff;
   cursor: pointer;
   background: rgba(0, 0, 0, 0);
 }
-.main-info-button:hover {
+.main-description__button:hover {
   border: 2px solid #ec7979;
   color: #ec7979;
 }
-.main-info-button:active {
+.main-description__button:active {
   border: 2px solid #ab4949;
   background: #ab4949;
   color: #ffffff;
 }
-.main-info-form {
-  width: 470px;
-  height: 450px;
+.main-form {
+  max-width: 470px;
+  align-self: flex-start;
   background-color: #ffffff;
   border-radius: 10px;
 }
-.form-body {
+.main-form-body {
   border: none;
+  padding: 30px 50px;
 }
-.form-head {
+.main-form-body__head {
   text-transform: uppercase;
   font-family: "Open Sans";
   font-size: 24px;
   font-weight: 700;
-  align-items: center;
-  display: flex;
-  width: 367px;
-  height: 90px;
-  justify-content: center;
-  margin: 0px 50px 45px 53px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 45px;
 }
 .free-text {
   color: #ec7979;
 }
-.form-body__item {
-  width: 370px;
-  height: 38px;
+.main-form-body__item {
+  padding-bottom: 16px;
+  margin-bottom: 33px;
+  width: 100%;
   border: none;
   border-bottom: 1px solid #bdbdbd;
   font-size: 14px;
+  line-height: 20px;
   font-family: "Open Sans";
 }
-.main-info-form-button {
+.main-form-body__button {
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 15px;
+  line-height: 21px;
   font-weight: 600;
-  width: 470px;
-  height: 60px;
-  display: inline-block;
-  vertical-align: bottom;
+  padding: 19px 0px;
+  width: 100%;
   border: none;
   background-color: #ec7979;
   color: #ffffff;
@@ -102,10 +123,10 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.main-info-form-button:hover {
+.main-form-body__button:hover {
   background-color: #ab4949;
 }
-.main-info-form-button:active {
+.main-form-body__button:active {
   background-color: #ec7979;
   box-shadow: inset 0px 0px 10px #ab4949;
 }

@@ -3,14 +3,7 @@
   padding: 35px 0px 27px 0px;
 }
 .social-networks {
-  display: flex;
   justify-content: center;
-}
-.social-networks__item:not(:last-child) {
-  margin-right: 33px;
-}
-.social-networks__item img {
-  display: block;
 }
 .social-networks__head {
   font-size: 18px;

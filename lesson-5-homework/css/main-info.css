@@ -21,6 +21,9 @@
   display: flex;
   justify-content: space-between;
 }
+.main-text {
+  max-width: 670px;
+}
 .main-text__logo {
   max-width: 270px;
   margin-bottom: 51px;
@@ -33,7 +36,6 @@
   font-size: 48px;
   font-weight: 500;
   line-height: 57px;
-  max-width: 670px;
   color: #ffffff;
   margin-bottom: 56px;
 }
@@ -101,7 +103,6 @@
 }
 .main-form-body__item {
   padding-bottom: 16px;
-  margin-bottom: 33px;
   width: 100%;
   border: none;
   border-bottom: 1px solid #bdbdbd;
@@ -109,12 +110,16 @@
   line-height: 20px;
   font-family: "Open Sans";
 }
+.main-form-body__item:not(:last-child) {
+  margin-bottom: 33px;
+}
 .main-form-body__button {
   font-family: "Open Sans";
   font-size: 15px;
   line-height: 21px;
   font-weight: 600;
   padding: 19px 0px;
+  margin-top: 60px;
   width: 100%;
   border: none;
   background-color: #ec7979;

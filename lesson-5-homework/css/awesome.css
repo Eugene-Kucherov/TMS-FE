@@ -29,6 +29,7 @@
 }
 .awesome-reason {
   text-align: center;
+  max-width: 370px;
 }
 .awesome-reason__picture {
   max-width: 170px;
@@ -44,10 +45,8 @@
   font-weight: 700;
   line-height: 33px;
   padding: 33px 0px;
-  max-width: 370px;
 }
 .awesome-reason__body {
   font-size: 18px;
   line-height: 22px;
-  max-width: 370px;
 }

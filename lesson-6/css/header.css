@@ -1,0 +1,27 @@
+.header {
+  background-color: white;
+  padding: 15px 0;
+}
+
+.header-wrap {
+  display: flex;
+}
+
+.navigation {
+  margin-right: 97px;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-list__item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.navigation-list__item a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+}

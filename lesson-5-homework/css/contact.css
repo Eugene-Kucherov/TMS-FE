@@ -1,0 +1,45 @@
+.contact {
+  padding: 50px 0;
+  text-align: center;
+}
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e5e5e5;
+  border: none;
+  margin-bottom: 50px;
+}
+.contact .form-body {
+  border: none;
+  width: 49%;
+  padding: 0;
+}
+.contact .form-body__item {
+  background-color: #e5e5e5;
+}
+.contact .form-body__item:not(:last-child) {
+  margin-bottom: 50px;
+}
+.contact-form__input {
+  width: 49%;
+  border: none;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #bdbdbd;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: "Open Sans";
+  resize: none;
+}
+.contact .download-button {
+  width: 32%;
+  border: none;
+  background-color: #ec7979;
+}
+.contact .download-button:hover {
+  background-color: #ab4949;
+  color: #ffffff;
+}
+.contact .download-button:active {
+  background-color: #ec7979;
+  box-shadow: inset 0px 0px 10px #ab4949;
+}

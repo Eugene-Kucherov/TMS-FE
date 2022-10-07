@@ -76,22 +76,16 @@
 .tab-description-text__item:not(:last-child) {
   margin-bottom: 20px;
 }
-.tab-description__button {
-  font-family: "Open Sans";
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 600;
+.tabs .download-button {
   width: 48%;
-  padding: 16px 0px;
   border: none;
   background-color: #ec7979;
-  color: #ffffff;
-  cursor: pointer;
 }
-.tab-description__button:hover {
+.tabs .download-button:hover {
   background-color: #ab4949;
+  color: #ffffff;
 }
-.tab-description__button:active {
+.tabs .download-button:active {
   background-color: #ec7979;
   box-shadow: inset 0px 0px 10px #ab4949;
 }

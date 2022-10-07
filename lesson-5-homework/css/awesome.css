@@ -21,18 +21,12 @@
   border-bottom: 1px solid #ec7979;
   width: 170px;
 }
-.section-head::after:nth-of-type(4) {
-  border-bottom: 1px solid #ffffff;
-}
 .section-description {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   margin: 40px 0 75px;
   color: #86878b;
-}
-.section-description:nth-of-type(4) {
-  color: #ffffff;
 }
 .awesome-reasons {
   display: flex;

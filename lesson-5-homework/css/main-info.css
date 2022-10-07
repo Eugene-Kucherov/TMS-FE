@@ -2,39 +2,41 @@
   padding: 207px 0px 185px 0px;
   position: relative;
 }
-.background {
+.main-bg {
   position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/image.jpg");
   background-size: cover;
-  z-index: -1;
 }
-.background::before {
+.main-bg img {
+  width: 100%;
+  height: 100%;
+}
+.main-bg::before {
   background: rgba(0, 0, 0, 0.5);
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
 }
 .main-content {
   display: flex;
   justify-content: space-between;
 }
-.main-text {
-  max-width: 670px;
+.main-description {
+  width: 58%;
 }
-.main-text__logo {
+.main-description__logo {
   max-width: 270px;
 }
-.main-text__logo img {
+.main-description__logo img {
   width: 100%;
   vertical-align: bottom;
 }
-.main-text__slogan {
+.main-description__slogan {
   position: relative;
   font-size: 48px;
   font-weight: 500;
@@ -42,7 +44,7 @@
   color: #ffffff;
   padding: 54px 0;
 }
-.main-text__slogan::after {
+.main-description__slogan::after {
   position: absolute;
   content: "";
   display: block;
@@ -51,49 +53,45 @@
   border-bottom: 1px solid #ffffff;
   width: 170px;
 }
-.main-description {
+.main-description__text {
   max-width: 270px;
-  margin-top: 42px;
-}
-.main-description__head {
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
-  margin-bottom: 42px;
-  width: 100%;
+  margin: 42px 0;
 }
-.main-description__button {
+.download-button {
   font-family: "Open Sans";
   font-size: 18px;
   font-weight: 600;
   line-height: 25px;
-  width: 100%;
+  width: 40%;
   padding: 16px 0px;
   border: 2px solid #ffffff;
   color: #ffffff;
   cursor: pointer;
   background: rgba(0, 0, 0, 0);
 }
-.main-description__button:hover {
+.download-button:hover {
   border: 2px solid #ec7979;
   color: #ec7979;
 }
-.main-description__button:active {
+.download-button:active {
   border: 2px solid #ab4949;
-  background: #ab4949;
+  background-color: #ab4949;
   color: #ffffff;
 }
 .main-form {
-  max-width: 470px;
+  width: 40%;
   align-self: flex-start;
   background-color: #ffffff;
   border-radius: 10px;
 }
-.main-form-body {
+.form-body {
   border: none;
   padding: 30px 50px;
 }
-.main-form-body__head {
+.form-body__head {
   text-transform: uppercase;
   font-family: "Open Sans";
   font-size: 24px;
@@ -106,19 +104,19 @@
 .free-text {
   color: #ec7979;
 }
-.main-form-body__item {
+.form-body__item {
   padding-bottom: 16px;
   width: 100%;
   border: none;
   border-bottom: 1px solid #bdbdbd;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 19px;
   font-family: "Open Sans";
 }
-.main-form-body__item:not(:last-child) {
+.form-body__item:not(:last-child) {
   margin-bottom: 33px;
 }
-.main-form-body__button {
+.main-form__button {
   font-family: "Open Sans";
   font-size: 15px;
   line-height: 21px;
@@ -133,10 +131,10 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.main-form-body__button:hover {
+.main-form__button:hover {
   background-color: #ab4949;
 }
-.main-form-body__button:active {
+.main-form__button:active {
   background-color: #ec7979;
   box-shadow: inset 0px 0px 10px #ab4949;
 }

@@ -29,29 +29,31 @@
 }
 .main-text__logo {
   max-width: 270px;
-  margin-bottom: 51px;
 }
 .main-text__logo img {
   width: 100%;
   vertical-align: bottom;
 }
 .main-text__slogan {
+  position: relative;
   font-size: 48px;
   font-weight: 500;
   line-height: 57px;
   color: #ffffff;
-  margin-bottom: 56px;
+  padding: 54px 0;
 }
-.main-text__separator {
-  padding: 0px;
-  height: 0px;
-  border: none;
-  border-top: 1px solid #ffffff;
+.main-text__slogan::after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  top: 276px;
+  border-bottom: 1px solid #ffffff;
   width: 170px;
-  margin-bottom: 42px;
 }
 .main-description {
   max-width: 270px;
+  margin-top: 42px;
 }
 .main-description__head {
   font-size: 18px;

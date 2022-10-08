@@ -60,27 +60,6 @@
   color: #ffffff;
   margin: 42px 0;
 }
-.download-button {
-  font-family: "Open Sans";
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 25px;
-  width: 40%;
-  padding: 16px 0px;
-  border: 2px solid #ffffff;
-  color: #ffffff;
-  cursor: pointer;
-  background: rgba(0, 0, 0, 0);
-}
-.download-button:hover {
-  border: 2px solid #ec7979;
-  color: #ec7979;
-}
-.download-button:active {
-  border: 2px solid #ab4949;
-  background-color: #ab4949;
-  color: #ffffff;
-}
 .main-form {
   width: 40%;
   align-self: flex-start;

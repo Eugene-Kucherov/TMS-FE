@@ -1,0 +1,52 @@
+.allbirds-header {
+  padding: 17px 0 14px;
+  background-color: #ffffff;
+}
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+.navigation-list__item:not(:nth-child(3), :last-child) {
+  margin-right: 36px;
+}
+.navigation-list__item a {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 21px;
+  color: #212a2f;
+  text-decoration: none;
+}
+.logo {
+  width: 120px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.logo img {
+  width: 100%;
+}
+.navigation-list-link-icons {
+  display: flex;
+}
+.link-icons {
+  display: flex;
+  align-items: center;
+  margin-left: 18px;
+}
+.link-icons * + * {
+  margin-left: 18px;
+}
+.link-icons__item {
+  width: 25px;
+}
+.link-icons__item:last-child {
+  width: 33px;
+}
+.link-icons__item img {
+  width: 100%;
+}

@@ -74,7 +74,10 @@
 .everyday-shop__image {
   position: relative;
 }
-.everyday-shop .men-women-buttons {
+.men-women-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
   width: 276px;
   position: absolute;
   top: 50%;
@@ -82,11 +85,8 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.everyday-shop .shop-button {
+.everyday-shop .button {
   width: 276px;
-}
-.everyday-shop .shop-button:first-child {
-  margin-bottom: 12px;
 }
 .everyday-shop__name {
   padding: 0 30px 10px;

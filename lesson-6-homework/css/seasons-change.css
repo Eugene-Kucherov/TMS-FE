@@ -1,36 +1,39 @@
-.seasons-change {
-  padding: 50px 0;
+.foto-section {
   text-align: center;
 }
-.seasons-change__bg {
+.foto-section__bg {
   width: 100%;
 }
-.seasons-change__bg img {
+.foto-section__bg img {
   width: 100%;
 }
-.seasons-change-head {
+.foto-section-head {
   margin-top: 52px;
   font-weight: 700;
   font-size: 32px;
   line-height: 42px;
   letter-spacing: 0.5px;
 }
-.seasons-change-text {
+.foto-section-text {
   margin-top: 54px;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.5px;
 }
-.seasons-change .men-women-buttons {
+.foto-section-buttons {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
   margin-top: 30px;
 }
-.seasons-change .shop-button {
+.foto-section .button {
   background-color: #212a2f;
   border: 2px solid #212a2f;
   color: #ffffff;
 }
-.seasons-change .shop-button:hover {
+.foto-section .button:hover {
+  transition-duration: 0.5s;
   color: #212a2f;
   background-color: #ffffff;
 }

@@ -34,7 +34,11 @@
   color: #ffffff;
   margin-bottom: 24px;
 }
-.shop-button {
+.main-info-buttons {
+  display: flex;
+  gap: 24px;
+}
+.button {
   width: 180px;
   padding: 17px 0 15px;
   background-color: #ffffff;
@@ -46,10 +50,8 @@
   letter-spacing: 2px;
   cursor: pointer;
 }
-.shop-button:first-child {
-  margin-right: 24px;
-}
-.shop-button:hover {
+.button:hover {
+  transition-duration: 0.5s;
   color: #ffffff;
   background-color: #000000;
 }

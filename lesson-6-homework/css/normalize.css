@@ -132,3 +132,6 @@ table {
   list-style: none;
   box-sizing: border-box;
 }
+img {
+  vertical-align: bottom;
+}

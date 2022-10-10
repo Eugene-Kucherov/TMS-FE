@@ -81,9 +81,8 @@
   width: 276px;
   position: absolute;
   top: 50%;
-  margin-top: -3em;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 .everyday-shop .button {
   width: 276px;

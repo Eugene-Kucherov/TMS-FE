@@ -1,0 +1,19 @@
+.main-info {
+  padding: 60px 0 171px;
+  position: relative;
+  background: linear-gradient(174.48deg, #fd749b -12.41%, #281ac8 88.56%);
+}
+.main-info-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-info-wave {
+  position: absolute;
+  top: 75%;
+  left: 0;
+  width: 100%;
+}
+.main-info-wave img {
+  width: 100%;
+}

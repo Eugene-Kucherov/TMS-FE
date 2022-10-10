@@ -8,16 +8,13 @@
   flex-wrap: wrap;
   list-style: none;
 }
-.tabs-head {
-  display: flex;
-}
 .tab {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 14px;
   display: none;
+  margin-bottom: -1px;
 }
-
 .tab:checked:nth-of-type(1) ~ .tab-content:nth-of-type(1) {
   opacity: 1;
   position: relative;
@@ -58,8 +55,7 @@
 }
 .tab-description {
   padding: 30px 0px 30px 100px;
-  width: 55%;
-  max-width: 670px;
+  width: 60%;
 }
 .tab-description__head {
   font-family: "Open Sans";
@@ -73,8 +69,8 @@
   line-height: 22px;
   margin-bottom: 27px;
 }
-.tab-description-text__item:not(:last-child) {
-  margin-bottom: 20px;
+.tab-description-text p + p {
+  margin-top: 20px;
 }
 .tabs .download-button {
   width: 48%;
@@ -90,7 +86,7 @@
   box-shadow: inset 0px 0px 10px #ab4949;
 }
 .tab-content__image {
-  width: 45%;
+  width: 40%;
 }
 .tab-content__image img {
   vertical-align: bottom;

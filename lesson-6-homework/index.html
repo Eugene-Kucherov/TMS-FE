@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css" />
     <title>Allbirds</title>
+    <script src="https://kit.fontawesome.com/a7da348397.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,15 +23,23 @@
                 </nav>
                 <div class="logo"><a href="#"><img src="./images/logo.png" alt="Logo"></a>
                 </div>
-                <div class="navigation-list-link-icons">
-                    <ul class="navigation-list">
-                        <li class="navigation-list__item"><a href="#">Sustainability</a></li>
-                        <li class="navigation-list__item"><a href="#">Women</a></li>
-                    </ul>
-                    <div class="link-icons">
-                        <a href="#" class="link-icons__item"><img src="./images/personal.svg" alt="Personal"></a>
-                        <a href="#" class="link-icons__item"><img src="./images/help.svg" alt="Help"></a>
-                        <a href="#" class="link-icons__item"><img src="./images/store.svg" alt="Store"></a>
+                <div class="user-actions">
+                    <nav class="navigation">
+                        <ul class="navigation-list">
+                            <li class="navigation-list__item"><a href="#">Sustainability</a></li>
+                            <li class="navigation-list__item"><a href="#">Women</a></li>
+                        </ul>
+                    </nav>
+                    <div class="user-actions__icons">
+                        <a href="#">
+                            <div class="user-actions__icons-item"><i class="fa-regular fa-user"></i></div>
+                        </a>
+                        <a href="#">
+                            <div class="user-actions__icons-item"><i class="fa-regular fa-circle-question"></i></div>
+                        </a>
+                        <a href="#">
+                            <div class="user-actions__icons-item"><i class="fa-solid fa-cart-shopping"></i></div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -52,151 +61,158 @@
     <section class="tabs">
         <div class="container">
             <h2 class="tabs__head">Our Favorites</h2>
-            <div class="tabs-wrap">
-                <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
-                <label for="tab1">Everyday</label>
-                <input type="radio" id="tab2" name="tabGroup1" class="tab">
-                <label for="tab2">Running</label>
-                <input type="radio" id="tab3" name="tabGroup1" class="tab">
-                <label for="tab3">Travel</label>
-                <div class="tab-content">
-                    <div class="everyday-shop">
-                        <div class="everyday-shop__image">
-                            <img src="./images/wool-runner.jpg" alt="Wool Runner">
-                            <div class="men-women-buttons">
-                                <button class="button">Shop Men</button>
-                                <button class="button">Shop Women</button>
-                            </div>
-                        </div>
-                        <h4 class="everyday-shop__name">Wool Runner</h4>
-                        <div class="everyday-shop__description">
-                            <div class="everyday-shop__description-icon"><img src="./images/wool-runner-icon.svg"
-                                    alt="">
-                            </div><span class="everyday-shop__description-text">Cozy Sneaker</span>
+            <input type="radio" id="tab1" name="tabGroup1" checked>
+            <label for="tab1" class="tab">Everyday</label>
+            <input type="radio" id="tab2" name="tabGroup1">
+            <label for="tab2" class="tab">Running</label>
+            <input type="radio" id="tab3" name="tabGroup1">
+            <label for="tab3" class="tab">Travel</label>
+            <div class="tab-content">
+                <div class="everyday-shop">
+                    <div class="everyday-shop__image">
+                        <img src="./images/wool-runner.jpg" alt="Wool Runner">
+                        <div class="men-women-buttons">
+                            <button class="button">Shop Men</button>
+                            <button class="button">Shop Women</button>
                         </div>
                     </div>
-                    <div class="everyday-shop">
-                        <div class="everyday-shop__image">
-                            <img src="./images/tree-runner.jpg" alt="Wool Runner">
-                            <div class="men-women-buttons">
-                                <button class="button">Shop Men</button>
-                                <button class="button">Shop Women</button>
-                            </div>
-                        </div>
-                        <h4 class="everyday-shop__name">Tree Runner</h4>
-                        <div class="everyday-shop__description">
-                            <div class="everyday-shop__description-icon"><img src="./images/tree-runner-icon.svg"
-                                    alt="">
-                            </div><span class="everyday-shop__description-text">Light and Breezy Sneaker</span>
-                        </div>
-                    </div>
-                    <div class="everyday-shop">
-                        <div class="everyday-shop__image">
-                            <img src="./images/wool-runner-mizzle.jpg" alt="Wool Runner">
-                            <div class="men-women-buttons">
-                                <button class="button">Shop Men</button>
-                                <button class="button">Shop Women</button>
-                            </div>
-                        </div>
-                        <h4 class="everyday-shop__name">Wool Runner Mizzle</h4>
-                        <div class="everyday-shop__description">
-                            <div class="everyday-shop__description-icon"><img src="./images/wool-runner-mizzle-icon.svg"
-                                    alt="">
-                            </div> <span class="everyday-shop__description-text">Rain-Ready Sneaker</span>
+                    <div class="everyday-shop__description">
+                        <h4 class="everyday-shop__description-title">Wool Runner</h4>
+                        <div class="everyday-shop__description-info">
+                            <div class="everyday-icon"><img src="./images/wool-runner-icon.svg" alt=""></div>
+                            <span class="everyday-text">Cozy Sneaker</span>
                         </div>
                     </div>
                 </div>
-                <div class="tab-content">
-                    <div class="everyday-shop">
-                        <div class="everyday-shop__image">
-                            <img src="./images/tree-runner.jpg" alt="Wool Runner">
-                            <div class="men-women-buttons">
-                                <button class="button">Shop Men</button>
-                                <button class="button">Shop Women</button>
-                            </div>
-                        </div>
-                        <h4 class="everyday-shop__name">Tree Runner</h4>
-                        <div class="everyday-shop__description">
-                            <div class="everyday-shop__description-icon"><img src="./images/tree-runner-icon.svg"
-                                    alt="">
-                            </div><span class="everyday-shop__description-text">Light and Breezy Sneaker</span>
+                <div class="everyday-shop">
+                    <div class="everyday-shop__image">
+                        <img src="./images/tree-runner.jpg" alt="Wool Runner">
+                        <div class="men-women-buttons">
+                            <button class="button">Shop Men</button>
+                            <button class="button">Shop Women</button>
                         </div>
                     </div>
-                    <div class="everyday-shop">
-                        <div class="everyday-shop__image">
-                            <img src="./images/wool-runner-mizzle.jpg" alt="Wool Runner">
-                            <div class="men-women-buttons">
-                                <button class="button">Shop Men</button>
-                                <button class="button">Shop Women</button>
-                            </div>
-                        </div>
-                        <h4 class="everyday-shop__name">Wool Runner Mizzle</h4>
-                        <div class="everyday-shop__description">
-                            <div class="everyday-shop__description-icon"><img src="./images/wool-runner-mizzle-icon.svg"
-                                    alt="">
-                            </div><span class="everyday-shop__description-text">Rain-Ready Sneaker</span>
-                        </div>
-                    </div>
-                    <div class="everyday-shop">
-                        <div class="everyday-shop__image">
-                            <img src="./images/wool-runner.jpg" alt="Wool Runner">
-                            <div class="men-women-buttons">
-                                <button class="button">Shop Men</button>
-                                <button class="button">Shop Women</button>
-                            </div>
-                        </div>
-                        <h4 class="everyday-shop__name">Wool Runner</h4>
-                        <div class="everyday-shop__description">
-                            <div class="everyday-shop__description-icon"><img src="./images/wool-runner-icon.svg"
-                                    alt="">
-                            </div><span class="everyday-shop__description-text">Cozy Sneaker</span>
+                    <div class="everyday-shop__description">
+                        <h4 class="everyday-shop__description-title">Tree Runner</h4>
+                        <div class="everyday-shop__description-info">
+                            <div class="everyday-icon"><img src="./images/tree-runner-icon.svg" alt=""></div>
+                            <span class="everyday-text">Light and Breezy Sneaker</span>
                         </div>
                     </div>
                 </div>
-                <div class="tab-content">
-                    <div class="everyday-shop">
-                        <div class="everyday-shop__image">
-                            <img src="./images/wool-runner-mizzle.jpg" alt="Wool Runner">
-                            <div class="men-women-buttons">
-                                <button class="button">Shop Men</button>
-                                <button class="button">Shop Women</button>
-                            </div>
-                        </div>
-                        <h4 class="everyday-shop__name">Wool Runner Mizzle</h4>
-                        <div class="everyday-shop__description">
-                            <div class="everyday-shop__description-icon"><img src="./images/wool-runner-mizzle-icon.svg"
-                                    alt="">
-                            </div><span class="everyday-shop__description-text">Rain-Ready Sneaker</span>
+                <div class="everyday-shop">
+                    <div class="everyday-shop__image">
+                        <img src="./images/wool-runner-mizzle.jpg" alt="Wool Runner">
+                        <div class="men-women-buttons">
+                            <button class="button">Shop Men</button>
+                            <button class="button">Shop Women</button>
                         </div>
                     </div>
-                    <div class="everyday-shop">
-                        <div class="everyday-shop__image">
-                            <img src="./images/wool-runner.jpg" alt="Wool Runner">
-                            <div class="men-women-buttons">
-                                <button class="button">Shop Men</button>
-                                <button class="button">Shop Women</button>
-                            </div>
-                        </div>
-                        <h4 class="everyday-shop__name">Wool Runner</h4>
-                        <div class="everyday-shop__description">
-                            <div class="everyday-shop__description-icon"><img src="./images/wool-runner-icon.svg"
-                                    alt="">
-                            </div><span class="everyday-shop__description-text">Cozy Sneaker</span>
+                    <div class="everyday-shop__description">
+                        <h4 class="everyday-shop__description-title">Wool Runner Mizzle</h4>
+                        <div class="everyday-shop__description-info">
+                            <div class="everyday-icon"><img src="./images/wool-runner-mizzle-icon.svg" alt=""></div>
+                            <span class="everyday-text">Rain-Ready Sneaker</span>
                         </div>
                     </div>
-                    <div class="everyday-shop">
-                        <div class="everyday-shop__image">
-                            <img src="./images/tree-runner.jpg" alt="Wool Runner">
-                            <div class="men-women-buttons">
-                                <button class="button">Shop Men</button>
-                                <button class="button">Shop Women</button>
-                            </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="everyday-shop">
+                    <div class="everyday-shop__image">
+                        <img src="./images/tree-runner.jpg" alt="Wool Runner">
+                        <div class="men-women-buttons">
+                            <button class="button">Shop Men</button>
+                            <button class="button">Shop Women</button>
                         </div>
-                        <h4 class="everyday-shop__name">Tree Runner</h4>
-                        <div class="everyday-shop__description">
-                            <div class="everyday-shop__description-icon"><img src="./images/tree-runner-icon.svg"
-                                    alt="">
-                            </div><span class="everyday-shop__description-text">Light and Breezy Sneaker</span>
+                    </div>
+                    <div class="everyday-shop__description">
+                        <h4 class="everyday-shop__description-title">Tree Runner</h4>
+                        <div class="everyday-shop__description-info">
+                            <div class="everyday-icon"><img src="./images/tree-runner-icon.svg" alt=""></div>
+                            <span class="everyday-text">Light and Breezy Sneaker</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="everyday-shop">
+                    <div class="everyday-shop__image">
+                        <img src="./images/wool-runner-mizzle.jpg" alt="Wool Runner">
+                        <div class="men-women-buttons">
+                            <button class="button">Shop Men</button>
+                            <button class="button">Shop Women</button>
+                        </div>
+                    </div>
+                    <div class="everyday-shop__description">
+                        <h4 class="everyday-shop__description-title">Wool Runner Mizzle</h4>
+                        <div class="everyday-shop__description-info">
+                            <div class="everyday-icon"><img src="./images/wool-runner-mizzle-icon.svg" alt=""></div>
+                            <span class="everyday-text">Rain-Ready Sneaker</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="everyday-shop">
+                    <div class="everyday-shop__image">
+                        <img src="./images/wool-runner.jpg" alt="Wool Runner">
+                        <div class="men-women-buttons">
+                            <button class="button">Shop Men</button>
+                            <button class="button">Shop Women</button>
+                        </div>
+                    </div>
+                    <div class="everyday-shop__description">
+                        <h4 class="everyday-shop__description-title">Wool Runner</h4>
+                        <div class="everyday-shop__description-info">
+                            <div class="everyday-icon"><img src="./images/wool-runner-icon.svg" alt=""></div>
+                            <span class="everyday-text">Cozy Sneaker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="everyday-shop">
+                    <div class="everyday-shop__image">
+                        <img src="./images/wool-runner-mizzle.jpg" alt="Wool Runner">
+                        <div class="men-women-buttons">
+                            <button class="button">Shop Men</button>
+                            <button class="button">Shop Women</button>
+                        </div>
+                    </div>
+                    <div class="everyday-shop__description">
+                        <h4 class="everyday-shop__description-title">Wool Runner Mizzle</h4>
+                        <div class="everyday-shop__description-info">
+                            <div class="everyday-icon"><img src="./images/wool-runner-mizzle-icon.svg" alt=""></div>
+                            <span class="everyday-text">Rain-Ready Sneaker</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="everyday-shop">
+                    <div class="everyday-shop__image">
+                        <img src="./images/wool-runner.jpg" alt="Wool Runner">
+                        <div class="men-women-buttons">
+                            <button class="button">Shop Men</button>
+                            <button class="button">Shop Women</button>
+                        </div>
+                    </div>
+                    <div class="everyday-shop__description">
+                        <h4 class="everyday-shop__description-title">Wool Runner</h4>
+                        <div class="everyday-shop__description-info">
+                            <div class="everyday-icon"><img src="./images/wool-runner-icon.svg" alt=""></div>
+                            <span class="everyday-text">Cozy Sneaker</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="everyday-shop">
+                    <div class="everyday-shop__image">
+                        <img src="./images/tree-runner.jpg" alt="Wool Runner">
+                        <div class="men-women-buttons">
+                            <button class="button">Shop Men</button>
+                            <button class="button">Shop Women</button>
+                        </div>
+                    </div>
+                    <div class="everyday-shop__description">
+                        <h4 class="everyday-shop__description-title">Tree Runner</h4>
+                        <div class="everyday-shop__description-info">
+                            <div class="everyday-icon"><img src="./images/tree-runner-icon.svg" alt=""></div>
+                            <span class="everyday-text">Light and Breezy Sneaker</span>
                         </div>
                     </div>
                 </div>
@@ -214,6 +230,65 @@
             </div>
         </div>
     </section>
+    <footer class="allbirds-footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="footer-block">
+                    <h4 class="footer-block__title">Help</h4>
+                    <ul class="footer-block__list">
+                        <li class="footer-block__list-item"><a href="#">1-888-963-8944</a></li>
+                        <li class="footer-block__list-item"><a href="#">1-814-251-9966 (Text)</a></li>
+                        <li class="footer-block__list-item"><a href="#">help@allbirds.com</a></li>
+                        <li class="footer-block__list-item"><a href="#">Returns/Exchanges</a></li>
+                        <li class="footer-block__list-item"><a href="#">FAQ/Contact Us</a></li>
+                        <li class="footer-block__list-item"><a href="#">Afterpay</a></li>
+                    </ul>
+                </div>
+                <div class="footer-block">
+                    <h4 class="footer-block__title">Shop</h4>
+                    <ul class="footer-block__list">
+                        <li class="footer-block__list-item"><a href="#">Men's Shoes</a></li>
+                        <li class="footer-block__list-item"><a href="#">Women's Shoes</a></li>
+                        <li class="footer-block__list-item"><a href="#">Men's Apparel</a></li>
+                        <li class="footer-block__list-item"><a href="#">Women's Apparel</a></li>
+                        <li class="footer-block__list-item"><a href="#">Socks</a></li>
+                        <li class="footer-block__list-item"><a href="#">Gift Cards</a></li>
+                        <li class="footer-block__list-item"><a href="#">Download the Allbirds App</a></li>
+                    </ul>
+                </div>
+                <div class="footer-block">
+                    <h4 class="footer-block__title">Company</h4>
+                    <ul class="footer-block__list">
+                        <li class="footer-block__list-item"><a href="#">Our Stores</a></li>
+                        <li class="footer-block__list-item"><a href="#">Our Story</a></li>
+                        <li class="footer-block__list-item"><a href="#">Our Materials</a></li>
+                        <li class="footer-block__list-item"><a href="#">Sustainability</a></li>
+                        <li class="footer-block__list-item"><a href="#">Partnerships</a></li>
+                        <li class="footer-block__list-item"><a href="#">Product Testing</a></li>
+                        <li class="footer-block__list-item"><a href="#">Affiliates</a></li>
+                        <li class="footer-block__list-item"><a href="#">Bulk Orders</a></li>
+                        <li class="footer-block__list-item"><a href="#">Careers</a></li>
+                        <li class="footer-block__list-item"><a href="#">Press</a></li>
+                        <li class="footer-block__list-item"><a href="#">California Transparency Act</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="footer-info__text">
+                    <h4 class="footer-block__title">Follow the Flock</h4>
+                    <p class="footer-info__text-description">Exclusive offers, a heads up on new things, and sightings
+                        of Allbirds in the wild. Oh, we have cute sheep, too. #weareallbirds</p>
+                </div>
+                <div class="footer-info__flags">
+                    <div class="footer-info__flags-item"><a href="#"><img src="./images/japan.svg" alt="Japan-flag"></a>
+                    </div>
+                    <div class="footer-info__flags-item"><a href="#"><img src="./images/korea.svg" alt="Korea-flag"></a>
+                    </div>
+                </div>
+            </div>
+            <h2 class="footer-title">© 2021 Allbirds, Inc. All Rights Reserved. Terms, Privacy & Accessibility</h2>
+        </div>
+    </footer>
 </body>
 
 </html>

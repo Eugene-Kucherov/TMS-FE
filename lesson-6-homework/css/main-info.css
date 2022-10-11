@@ -34,9 +34,8 @@
   color: #ffffff;
   margin-bottom: 24px;
 }
-.main-info-buttons {
-  display: flex;
-  gap: 24px;
+.main-info-buttons button + button {
+  margin-left: 24px;
 }
 .button {
   width: 180px;

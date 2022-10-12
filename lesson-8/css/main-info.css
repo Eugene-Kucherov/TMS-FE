@@ -1,5 +1,5 @@
 .main-info {
-  padding: 60px 0 171px;
+  padding: 60px 0 200px;
   position: relative;
   background: linear-gradient(174.48deg, #fd749b -12.41%, #281ac8 88.56%);
 }
@@ -10,9 +10,10 @@
 }
 .main-info-wave {
   position: absolute;
-  top: 75%;
+  bottom: 0;
   left: 0;
   width: 100%;
+  transform: rotate(-1deg);
 }
 .main-info-wave img {
   width: 100%;

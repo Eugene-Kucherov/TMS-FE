@@ -1,38 +1,32 @@
-.foto-section {
+.allbirds-section {
+  padding: 60px 0 120px;
   text-align: center;
 }
-.foto-section__bg {
-  width: 100%;
-}
-.foto-section__bg img {
-  width: 100%;
-}
-.foto-section-head {
-  margin-top: 52px;
+.section-head {
   font-weight: 700;
   font-size: 32px;
   line-height: 42px;
   letter-spacing: 0.5px;
 }
-.foto-section-text {
+.section-text {
   margin-top: 54px;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.5px;
 }
-.foto-section-buttons {
+.section-buttons {
   display: flex;
   gap: 24px;
   justify-content: center;
   margin-top: 30px;
 }
-.foto-section .button {
+.allbirds-section .button {
   background-color: #212a2f;
   border: 2px solid #212a2f;
   color: #ffffff;
 }
-.foto-section .button:hover {
+.allbirds-section .button:hover {
   transition-duration: 0.5s;
   color: #212a2f;
   background-color: #ffffff;

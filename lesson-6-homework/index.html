@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css" />
     <script src="https://kit.fontawesome.com/a7da348397.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>Allbirds</title>
 </head>
 
@@ -230,10 +231,10 @@
                 <button class="button">Shop Men</button>
                 <button class="button">Shop Women</button>
             </div>
-            <div class="slider">
-                <h3 class="title slider__head">Shop The Collections</h3>
-                <div class="wrap">
-                    <div class="wrap-item">
+            <div class="swiper slider">
+                <!-- <h3 class="title slider__head">Shop The Collections</h3> -->
+                <div class="swiper-wrapper wrap">
+                    <div class="wrap-item swiper-slide">
                         <div class="image">
                             <img src="./images/collections1.jpg" alt="Wool Runner">
                         </div>
@@ -243,7 +244,7 @@
                                 (while they last, that is).</p>
                         </div>
                     </div>
-                    <div class="wrap-item">
+                    <div class="wrap-item swiper-slide">
                         <div class="image">
                             <img src="./images/collections2.jpg" alt="Wool Runner">
                         </div>
@@ -253,7 +254,16 @@
                                 covered from head to toe.</p>
                         </div>
                     </div>
-                    <div class="wrap-item">
+                    <div class="wrap-item swiper-slide">
+                        <div class="image">
+                            <img src="./images/collections3.jpg" alt="Wool Runner">
+                        </div>
+                        <div class="image-description">
+                            <h4 class="image-name">Fresh Long Sleeve Tee Colors</h4>
+                            <p class="subtitle">It’s crisp, clean and ready for wherever the day takes you.</p>
+                        </div>
+                    </div>
+                    <div class="wrap-item swiper-slide">
                         <div class="image">
                             <img src="./images/collections3.jpg" alt="Wool Runner">
                         </div>
@@ -263,6 +273,8 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
     </section>
@@ -328,5 +340,6 @@
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/index.js"></script>
 
 </html>

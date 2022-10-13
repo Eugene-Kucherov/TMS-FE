@@ -3,14 +3,7 @@
   background-color: #ffffff;
   text-align: center;
 }
-.tabs__head {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 42px;
-  letter-spacing: 0.5px;
-}
 .tab {
-  margin-top: 32px;
   display: inline-block;
   text-transform: uppercase;
   font-weight: 700;
@@ -43,53 +36,38 @@ input[type="radio"]:nth-of-type(3):checked ~ .tab-content:nth-of-type(3) {
   justify-content: space-between;
   border-top: 2px solid #d3d4d5;
 }
-.everyday-shop {
-  width: 30%;
-}
-.everyday-shop__image img {
-  width: 100%;
-}
-.everyday-shop__image {
+.tabs .image {
   position: relative;
 }
-.men-women-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+.tab-buttons {
   width: 276px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.everyday-shop .button {
-  width: 276px;
+.tab-buttons button + button {
+  margin-top: 12px;
 }
-.everyday-shop__description {
+.tabs .button {
+  width: 100%;
+}
+.tabs .image-description {
   padding-left: 30px;
-  text-align: left;
-  width: 92%;
-}
-.everyday-shop__description-title {
-  padding-bottom: 10px;
-  margin-top: 17px;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 29px;
-  letter-spacing: 0.5px;
+  width: 85%;
   position: relative;
 }
-.everyday-shop__description-title::after {
+.tabs .image-description::after {
   position: absolute;
   content: "";
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
   border-bottom: 1px solid #d3d4d5;
   width: 100%;
 }
+.tabs .image-name {
+  margin-bottom: 20px;
+}
 .everyday-shop__description-info {
-  margin-top: 11px;
   display: flex;
   align-items: center;
 }

@@ -26,31 +26,13 @@
   color: #ffffff;
   margin-bottom: 11px;
 }
-.main-info-content__text {
+.main-info .subtitle {
   font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
   color: #ffffff;
-  margin-bottom: 24px;
+}
+.main-info-buttons {
+  margin-top: 24px;
 }
 .main-info-buttons button + button {
   margin-left: 24px;
-}
-.button {
-  width: 180px;
-  padding: 17px 0 15px;
-  background-color: #ffffff;
-  border: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  cursor: pointer;
-}
-.button:hover {
-  transition-duration: 0.5s;
-  color: #ffffff;
-  background-color: #000000;
 }

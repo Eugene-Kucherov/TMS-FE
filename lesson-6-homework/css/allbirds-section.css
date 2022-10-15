@@ -15,15 +15,6 @@
 .section-buttons button + button {
   margin-left: 24px;
 }
-.allbirds-section .button {
-  background-color: #212a2f;
-  border: 2px solid #212a2f;
-  color: #ffffff;
-}
-.allbirds-section .button:hover {
-  color: #212a2f;
-  background-color: #ffffff;
-}
 .swiper__head {
   text-align: left;
   margin: 0 0 24px;

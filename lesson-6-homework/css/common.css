@@ -44,6 +44,15 @@ body {
   color: #ffffff;
   background-color: #212a2f;
 }
+.button--black {
+  background-color: #212a2f;
+  border: 2px solid #212a2f;
+  color: #ffffff;
+}
+.button--black:hover {
+  color: #212a2f;
+  background-color: #ffffff;
+}
 
 .wrap-item {
   width: 32%;

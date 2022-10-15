@@ -24,9 +24,13 @@
   display: flex;
   margin-left: auto;
 }
-.social-networks__item:not(:last-child) {
-  margin-right: 30px;
+.social-networks * + * {
+  margin-left: 45px;
 }
-.social-networks__item img {
-  display: block;
+.social-networks__item {
+  font-size: 55px;
+  color: #cccccc;
+}
+.social-networks__item:active {
+  color: #ec7979;
 }

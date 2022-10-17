@@ -1,8 +1,8 @@
 .foto-section {
   height: 540px;
-  width: 100%;
 }
 .foto-section img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }

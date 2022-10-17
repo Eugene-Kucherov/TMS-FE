@@ -40,13 +40,15 @@ input[type="radio"]:nth-of-type(3):checked ~ .tab-content:nth-of-type(3) {
   position: relative;
 }
 .shop-buttons--vertical {
-  width: 276px;
-}
-.shop-buttons--vertical button {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .shop-buttons--vertical button + button {
   margin: 12px 0 0;
+}
+.tabs .button {
+  padding-left: 80px;
+  padding-right: 80px;
 }
 .absolute-center {
   position: absolute;

@@ -1,0 +1,16 @@
+body {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.logo img {
+  vertical-align: bottom;
+}

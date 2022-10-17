@@ -1,0 +1,23 @@
+.user-actions {
+  margin-left: auto;
+  display: flex;
+}
+
+.user-actions * + * {
+  margin-left: 20px;
+}
+
+.icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: none;
+}
+
+.icon-button img {
+  width: 100%;
+  height: 100%;
+}

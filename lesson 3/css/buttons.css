@@ -1,0 +1,9 @@
+.link-button {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  cursor: pointer;
+}

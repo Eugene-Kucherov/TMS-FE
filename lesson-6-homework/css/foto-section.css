@@ -1,6 +1,8 @@
-.foto-section__bg {
+.foto-section {
+  height: 540px;
   width: 100%;
 }
-.foto-section__bg img {
+.foto-section img {
   width: 100%;
+  height: 100%;
 }

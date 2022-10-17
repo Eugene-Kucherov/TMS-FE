@@ -19,6 +19,12 @@ body {
   line-height: 42px;
   letter-spacing: 0.5px;
 }
+.title--light {
+  font-weight: 400;
+}
+.title-last {
+  margin-top: 150px;
+}
 
 .subtitle {
   font-weight: 400;
@@ -26,10 +32,25 @@ body {
   line-height: 24px;
   letter-spacing: 0.5px;
 }
+.subtitle--bold {
+  font-weight: 700;
+}
+.subtitle--center {
+  margin: 0 auto 30px;
+  max-width: 655px;
+}
+.subtitle--white {
+  color: #ffffff;
+}
+.subtitle--long {
+  max-width: 825px;
+}
 
+.shop-buttons button + button {
+  margin-left: 24px;
+}
 .button {
-  width: 180px;
-  padding: 17px 0 15px;
+  padding: 17px 40px 15px;
   background-color: #ffffff;
   border: none;
   text-transform: uppercase;
@@ -53,6 +74,9 @@ body {
   color: #212a2f;
   background-color: #ffffff;
 }
+.button--long {
+  width: 384px;
+}
 
 .wrap-item {
   width: 32%;
@@ -64,9 +88,8 @@ body {
   width: 100%;
 }
 .image-description {
-  padding-left: 18px;
+  padding: 0 18px;
   text-align: left;
-  width: 90%;
 }
 .image-name {
   margin-bottom: 10px;

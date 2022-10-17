@@ -30,12 +30,5 @@
   margin-bottom: 11px;
 }
 .main-info .subtitle {
-  font-weight: 700;
-  color: #ffffff;
-}
-.main-info-buttons {
-  margin-top: 24px;
-}
-.main-info-buttons button + button {
-  margin-left: 24px;
+  margin-bottom: 24px;
 }

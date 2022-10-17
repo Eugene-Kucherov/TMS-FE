@@ -1,5 +1,5 @@
 .allbirds-header {
-  padding: 17px 0 14px;
+  padding: 11px 0;
   background-color: #ffffff;
 }
 .header-wrap {
@@ -23,10 +23,8 @@
   letter-spacing: 1.7px;
 }
 .logo {
+  margin: 0 200px 0 auto;
   width: 120px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 }
 .logo img {
   width: 100%;
@@ -40,14 +38,15 @@
   align-items: center;
   margin-left: 18px;
 }
-.user-actions__icons * + * {
-  margin-left: 18px;
-}
-.user-actions__icons-item {
+.user-actions__icons a {
+  display: inline-block;
   width: 30px;
   font-size: 25px;
   color: #212a2f;
 }
-.user-actions__icons-item:active {
+.user-actions__icons * + * {
+  margin-left: 18px;
+}
+.user-actions__icons a:active {
   color: red;
 }

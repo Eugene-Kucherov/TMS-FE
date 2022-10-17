@@ -39,33 +39,27 @@ input[type="radio"]:nth-of-type(3):checked ~ .tab-content:nth-of-type(3) {
 .tabs .image {
   position: relative;
 }
-.tab-buttons {
+.shop-buttons--vertical {
   width: 276px;
+}
+.shop-buttons--vertical button {
+  width: 100%;
+}
+.shop-buttons--vertical button + button {
+  margin: 12px 0 0;
+}
+.absolute-center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.tab-buttons button + button {
-  margin-top: 12px;
-}
-.tabs .button {
-  width: 100%;
-}
 .tabs .image-description {
-  padding-left: 30px;
-  width: 85%;
-  position: relative;
-}
-.tabs .image-description::after {
-  position: absolute;
-  content: "";
-  top: 50%;
-  border-bottom: 1px solid #d3d4d5;
-  width: 100%;
+  padding: 0 30px;
 }
 .tabs .image-name {
-  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d3d4d5;
 }
 .everyday-shop__description-info {
   display: flex;

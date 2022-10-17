@@ -1,19 +1,9 @@
 .allbirds-section {
-  padding: 60px 0 120px;
+  padding: 60px 0;
   text-align: center;
-}
-.subtitle--bold {
-  font-weight: 700;
-}
-.subtitle--center {
-  margin: 0 auto 30px;
-  max-width: 655px;
 }
 .section-buttons {
   margin-bottom: 120px;
-}
-.section-buttons button + button {
-  margin-left: 24px;
 }
 .swiper__head {
   text-align: left;
@@ -43,9 +33,26 @@
   background-color: #4d5559;
   transition: 0s;
 }
-.button--long {
-  width: 33%;
+.allbirds-form {
+  margin-bottom: 24px;
 }
-.title--light {
-  font-weight: 400;
+.allbirds-form * + * {
+  margin-left: 12px;
+}
+.allbirds-form__item {
+  position: relative;
+  padding-left: 60px;
+  width: 588px;
+  height: 48px;
+  border: none;
+  border-bottom: 2px solid #212a2f;
+}
+.note {
+  font-size: 14px;
+  line-height: 14px;
+  color: #74797c;
+}
+.note a {
+  text-decoration: none;
+  color: #74797c;
 }

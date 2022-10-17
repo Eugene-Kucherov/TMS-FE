@@ -7,6 +7,7 @@
 }
 .footer-block {
   width: 25%;
+  padding-right: 10px;
 }
 .footer-block__title {
   font-size: 14px;

@@ -5,7 +5,11 @@
 .header-wrap {
   display: flex;
 }
+.header-logo {
+  width: 75px;
+}
 .header-logo img {
+  width: 100%;
   vertical-align: bottom;
 }
 .navigation {

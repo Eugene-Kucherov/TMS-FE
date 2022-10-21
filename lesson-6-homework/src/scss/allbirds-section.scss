@@ -4,10 +4,14 @@
 }
 .section-buttons {
   margin-bottom: 120px;
+  justify-content: center;
 }
 .swiper__head {
-  text-align: left;
-  margin: 0 0 24px;
+  margin-bottom: 24px;
+  @media (min-width: 1025px) {
+    text-align: left;
+    margin-left: 0;
+  }
 }
 .swiper-wrapper {
   display: flex;

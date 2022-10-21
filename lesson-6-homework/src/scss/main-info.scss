@@ -1,7 +1,15 @@
 .main-info {
-  padding: 70px 0;
   height: 740px;
   position: relative;
+  @media (max-width: 1024px) {
+    height: 600px;
+  }
+  @media (max-width: 768px) {
+    height: 900px;
+  }
+  @media (max-width: 425px) {
+    height: 600px;
+  }
 }
 .main-info__bg {
   position: absolute;
@@ -15,19 +23,34 @@
 .main-info__bg img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .main-info-content {
   position: absolute;
   bottom: 70px;
   width: 60%;
+  @media (max-width: 1024px) {
+    width: 75%;
+  }
+  @media (max-width: 768px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: auto;
+    width: 90%;
+    text-align: center;
+  }
 }
 .main-info-content__head {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 3em;
   line-height: 63px;
   letter-spacing: 0.5px;
   color: #ffffff;
   margin-bottom: 11px;
+  @media (max-width: 425px) {
+    font-size: 2.5em;
+  }
 }
 .main-info .subtitle {
   margin-bottom: 24px;

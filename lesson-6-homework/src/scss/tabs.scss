@@ -7,10 +7,17 @@
   display: inline-block;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 24px;
   text-decoration: none;
   padding: 10px 50px;
+  @media (max-width: 768px) {
+    padding: 7px 30px;
+  }
+  @media (max-width: 425px) {
+    padding: 5px 18px;
+    font-size: 0.8em;
+  }
 }
 input[type="radio"] {
   display: none;
@@ -23,12 +30,27 @@ input:hover + .tab {
 }
 input[type="radio"]:nth-of-type(1):checked ~ .tab-content:nth-of-type(1) {
   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
 }
 input[type="radio"]:nth-of-type(2):checked ~ .tab-content:nth-of-type(2) {
   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
 }
 input[type="radio"]:nth-of-type(3):checked ~ .tab-content:nth-of-type(3) {
   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
 }
 .tab-content {
   padding-top: 34px;
@@ -39,16 +61,21 @@ input[type="radio"]:nth-of-type(3):checked ~ .tab-content:nth-of-type(3) {
 .tabs .image {
   position: relative;
 }
-.shop-buttons--vertical {
-  display: flex;
-  flex-direction: column;
-}
-.shop-buttons--vertical button + button {
-  margin: 12px 0 0;
+.tabs .shop-buttons {
+  gap: 12px;
+  width: 70%;
+  @media (max-width: 1024px) {
+    gap: 10px;
+  }
 }
 .tabs .button {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 16px 0;
+  @media (max-width: 768px) {
+    opacity: 0.7;
+  }
+}
+.shop-buttons--vertical {
+  flex-direction: column;
 }
 .absolute-center {
   position: absolute;
@@ -58,6 +85,12 @@ input[type="radio"]:nth-of-type(3):checked ~ .tab-content:nth-of-type(3) {
 }
 .tabs .image-description {
   padding: 0 30px;
+  @media (max-width: 1024px) {
+    padding: 0 20px;
+  }
+  @media (max-width: 768px) {
+    padding: 0 10px;
+  }
 }
 .tabs .image-name {
   padding-bottom: 10px;
@@ -66,6 +99,9 @@ input[type="radio"]:nth-of-type(3):checked ~ .tab-content:nth-of-type(3) {
 .everyday-shop__description-info {
   display: flex;
   align-items: center;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 }
 .everyday-icon {
   width: 30px;
@@ -75,7 +111,13 @@ input[type="radio"]:nth-of-type(3):checked ~ .tab-content:nth-of-type(3) {
   width: 100%;
 }
 .everyday-text {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 20px;
   letter-spacing: 0.4px;
+  @media (max-width: 1024px) {
+    font-size: 0.75em;
+  }
+  @media (max-width: 768px) {
+    font-size: 0.625em;
+  }
 }

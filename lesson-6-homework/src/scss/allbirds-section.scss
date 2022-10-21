@@ -39,17 +39,22 @@
 }
 .allbirds-form {
   margin-bottom: 24px;
-}
-.allbirds-form * + * {
-  margin-left: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
 }
 .allbirds-form__item {
   position: relative;
   padding-left: 60px;
-  width: 588px;
+  width: 570px;
   height: 48px;
   border: none;
   border-bottom: 2px solid #212a2f;
+  @media (max-width: 768px) {
+    width: 80%;
+    padding-left: 30px;
+  }
 }
 .note {
   font-size: 14px;

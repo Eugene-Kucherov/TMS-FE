@@ -4,10 +4,22 @@
 }
 .footer-wrap {
   display: flex;
+  flex-wrap: wrap;
+  @media (max-width: 768px) {
+    justify-content: space-around;
+    gap: 50px;
+  }
 }
 .footer-block {
   width: 25%;
+  min-width: 246px;
   padding-right: 10px;
+  @media (max-width: 1024px) {
+    width: 33%;
+  }
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }
 .footer-block__title {
   font-size: 14px;
@@ -31,6 +43,12 @@
   display: flex;
   justify-content: space-between;
   margin-top: 85px;
+  @media (max-width: 425px) {
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
 }
 .footer-info__text {
   max-width: 300px;

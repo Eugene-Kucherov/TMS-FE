@@ -4,15 +4,32 @@
 }
 .contact-form {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
   background-color: #e5e5e5;
   border: none;
   margin-bottom: 50px;
+  @media (max-width: 1024px) {
+    gap: 20px;
+  }
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
 }
 .contact .form-body {
   border: none;
-  width: 49%;
   padding: 0;
+  width: calc((100% - 30px) / 2);
+  @media (max-width: 1024px) {
+    width: calc((100% - 20px) / 2);
+  }
+  @media (max-width: 768px) {
+    margin: 0 auto;
+    width: 80%;
+  }
+  @media (max-width: 425px) {
+    width: 100%;
+  }
 }
 .contact .form-body__item {
   background-color: #e5e5e5;
@@ -21,7 +38,7 @@
   margin-bottom: 50px;
 }
 .contact-form__input {
-  width: 49%;
+  width: calc((100% - 30px) / 2);
   border: none;
   background-color: #e5e5e5;
   border-bottom: 1px solid #bdbdbd;
@@ -29,9 +46,19 @@
   line-height: 19px;
   font-family: "Open Sans";
   resize: none;
+  @media (max-width: 1024px) {
+    width: calc((100% - 20px) / 2);
+  }
+  @media (max-width: 768px) {
+    height: 182px;
+    margin: 0 auto;
+    width: 80%;
+  }
+  @media (max-width: 425px) {
+    width: 100%;
+  }
 }
 .contact .download-button {
-  width: 32%;
   border: none;
   background-color: #ec7979;
 }

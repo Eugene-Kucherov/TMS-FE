@@ -32,6 +32,12 @@ body {
   transform: translateX(-50%);
   border-bottom: 1px solid #ec7979;
   width: 15%;
+  @media (max-width: 768px) {
+    width: 30%;
+  }
+  @media (max-width: 425px) {
+    width: 50%;
+  }
 }
 .section-description {
   font-size: 1.125rem;
@@ -47,9 +53,9 @@ body {
 }
 .download-button {
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
-  line-height: 25px;
+  line-height: 1.5rem;
   width: 40%;
   padding: 16px 0px;
   border: 2px solid #ffffff;

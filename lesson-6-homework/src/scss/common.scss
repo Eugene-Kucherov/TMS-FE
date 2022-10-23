@@ -71,6 +71,7 @@ body {
   font-weight: 700;
   letter-spacing: 2px;
   cursor: pointer;
+  white-space: nowrap;
   @media (max-width: 425px) {
     font-size: 0.75em;
     padding: 12px 20px;
@@ -89,6 +90,9 @@ body {
 .button--black:hover {
   color: #212a2f;
   background-color: #ffffff;
+}
+.button--long {
+  white-space: normal;
 }
 
 .wrap-item {
@@ -109,6 +113,9 @@ body {
 .image-description {
   padding: 0 18px;
   text-align: left;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }
 .image-name {
   margin-bottom: 10px;

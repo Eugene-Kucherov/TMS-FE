@@ -16,11 +16,11 @@ body {
   line-height: 2.625rem;
   font-weight: 400;
   text-align: center;
-  padding: 54px 0;
+  padding-bottom: 54px;
   @media (max-width: 1024px) {
     font-size: 1.5rem;
     line-height: 1.75rem;
-    padding: 46px 0;
+    padding-bottom: 46px;
   }
 }
 .section-head::after {

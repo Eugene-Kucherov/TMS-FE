@@ -20,3 +20,15 @@
     margin-top: 42px;
   }
 }
+.axit-social .social-networks__item {
+  font-size: 2.5rem;
+  @media (max-width: 1024px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 425px) {
+    font-size: 1.3rem;
+  }
+}

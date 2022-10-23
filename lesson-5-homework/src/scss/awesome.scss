@@ -1,6 +1,9 @@
 .awesome {
   padding: 50px 0px;
   background-color: #e5e5e5;
+  @media (max-width: 768px) {
+    padding: 30px 0;
+  }
 }
 .awesome-reasons {
   display: flex;

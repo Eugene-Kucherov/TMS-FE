@@ -1,0 +1,55 @@
+.awesome {
+  padding: 50px 0px;
+  background-color: #e5e5e5;
+  @media (max-width: 768px) {
+    padding: 30px 0;
+  }
+}
+.awesome-reasons {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+.awesome-reason {
+  text-align: center;
+  @media (max-width: 768px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+  @media (max-width: 425px) {
+    width: 100%;
+  }
+}
+.awesome-reason__picture {
+  max-width: 170px;
+  margin: 0px auto;
+  @media (max-width: 1024px) {
+    max-width: 147px;
+  }
+}
+.awesome-reason__picture img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.awesome-reason__head {
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  padding: 33px 0px;
+  @media (max-width: 1024px) {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+.awesome-reason__body {
+  font-size: 1.125rem;
+  line-height: 1.3rem;
+  @media (max-width: 1024px) {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+}

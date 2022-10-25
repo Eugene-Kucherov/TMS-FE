@@ -1,0 +1,118 @@
+.tabs {
+  padding: 100px 0px 50px 0px;
+  @media (max-width: 768px) {
+    padding: 30px 0;
+  }
+}
+.tab-description {
+  padding: 30px 30px 30px 100px;
+  width: 57%;
+  @media (max-width: 1024px) {
+    padding: 15px 15px 15px 70px;
+  }
+  @media (max-width: 768px) {
+    padding: 30px 25px;
+    text-align: center;
+    width: 100%;
+  }
+}
+.tab-description__head {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+  margin-bottom: 40px;
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 60px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+.tab-description-text {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  margin-bottom: 27px;
+  @media (max-width: 1024px) {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+.tab-description-text p + p {
+  margin-top: 15px;
+}
+.tab-content {
+  display: none;
+  border: 1px solid #c6cbcd;
+  @media (max-width: 1024px) {
+    align-items: center;
+  }
+}
+input[type="radio"] {
+  display: none;
+}
+.tab {
+  margin-bottom: -1px;
+  display: inline-block;
+  padding: 10px 75px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  @media (max-width: 1024px) {
+    padding: 10px 40px;
+  }
+  @media (max-width: 768px) {
+    width: calc((100% - 9px) / 3);
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+input:checked + .tab {
+  border: 1px solid #c6cbcd;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 1px solid #e5e5e5;
+}
+input:hover + .tab {
+  cursor: pointer;
+}
+input[type="radio"]:nth-of-type(1):checked ~ .tab-content:nth-of-type(1) {
+  display: flex;
+}
+input[type="radio"]:nth-of-type(2):checked ~ .tab-content:nth-of-type(2) {
+  display: flex;
+}
+input[type="radio"]:nth-of-type(3):checked ~ .tab-content:nth-of-type(3) {
+  display: flex;
+}
+.tabs .download-button {
+  border: none;
+  background-color: #ec7979;
+}
+.tabs .download-button:hover {
+  background-color: #ab4949;
+  color: #ffffff;
+}
+.tabs .download-button:active {
+  background-color: #ec7979;
+  box-shadow: inset 0px 0px 10px #ab4949;
+}
+.tab-content__image {
+  width: 43%;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.tab-content__image img {
+  vertical-align: bottom;
+  width: 100%;
+  object-fit: cover;
+}

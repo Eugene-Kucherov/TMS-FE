@@ -1,0 +1,34 @@
+.axit-social {
+  background-color: #000000;
+  padding: 35px 0px 27px 0px;
+}
+.social-networks {
+  justify-content: center;
+}
+.social-networks__head {
+  font-size: 1.125rem;
+  line-height: 1.3rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-top: 27px;
+  @media (max-width: 1024px) {
+    font-size: 0.825rem;
+    line-height: 1rem;
+    margin-top: 38px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 42px;
+  }
+}
+.axit-social .social-networks__item {
+  font-size: 2.5rem;
+  @media (max-width: 1024px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 425px) {
+    font-size: 1.3rem;
+  }
+}

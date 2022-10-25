@@ -1,0 +1,107 @@
+.customers-reviews {
+  padding: 50px 0;
+  background-color: #e5e5e5;
+  @media (max-width: 768px) {
+    padding: 30px 0;
+  }
+}
+.reviews-wrap {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  @media (max-width: 1024px) {
+    gap: 20px;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.review {
+  width: calc((100% - 60px) / 3);
+  @media (max-width: 1024px) {
+    width: calc((100% - 40px) / 3);
+  }
+}
+.review__text {
+  position: relative;
+  padding: 38px 20px;
+  width: 100%;
+  font-size: 1.125rem;
+  line-height: 1.3rem;
+  text-align: center;
+  color: #86878b;
+  background-color: #d0d0d0;
+  border-radius: 10px;
+  margin-bottom: 66px;
+  @media (max-width: 1024px) {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    padding: 50px 20px;
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+.review__text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 19%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 15px 0 15px;
+  border-color: #d0d0d0 transparent transparent transparent;
+}
+.review-person {
+  display: flex;
+}
+.review-person__image {
+  width: 70px;
+  margin-right: 30px;
+  @media (max-width: 1024px) {
+    width: 63px;
+  }
+}
+.review-person__image img {
+  width: 100%;
+  border-radius: 50%;
+}
+.review-person__data {
+  max-width: calc(100% - 100px);
+}
+.review-person__data span {
+  display: block;
+}
+.review-person__data-name {
+  padding: 10px 0;
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  @media (max-width: 1024px) {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+.review-person__data-occupation {
+  font-size: 1.125rem;
+  line-height: 1.3rem;
+  @media (max-width: 1024px) {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+}
+.swiper {
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}
+.swiper-pagination {
+  @media (max-width: 425px) {
+    top: 93% !important;
+    left: 30% !important;
+  }
+}

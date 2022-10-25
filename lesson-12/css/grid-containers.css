@@ -23,38 +23,46 @@
   margin: 0 auto;
   height: 400px;
   display: grid;
+  grid-template-areas:
+    "el1 el2 el3 el3"
+    "el1 el4 el5 el6"
+    "el7 el8 el5 el9"
+    "el10 el8 el11 el11";
   grid-template-columns: repeat(4, 1fr);
 }
 .element {
   border: 1px solid red;
 }
 .n-1 {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-area: el1;
+}
+.n-2 {
+  grid-area: el2;
 }
 .n-3 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 1;
+  grid-area: el3;
+}
+.n-4 {
+  grid-area: el4;
 }
 .n-5 {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 4;
+  grid-area: el5;
+}
+.n-6 {
+  grid-area: el6;
+}
+.n-7 {
+  grid-area: el7;
 }
 .n-8 {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 5;
+  grid-area: el8;
+}
+.n-9 {
+  grid-area: el9;
+}
+.n-10 {
+  grid-area: el10;
 }
 .n-11 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 4;
-  grid-row-end: 4;
+  grid-area: el11;
 }

@@ -72,13 +72,13 @@ body {
   letter-spacing: 2px;
   cursor: pointer;
   white-space: nowrap;
+  transition-duration: 0.5s;
   @media (max-width: 425px) {
     font-size: 0.75em;
     padding: 12px 20px;
   }
 }
 .button:hover {
-  transition-duration: 0.5s;
   color: #ffffff;
   background-color: #212a2f;
 }

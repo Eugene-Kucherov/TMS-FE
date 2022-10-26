@@ -9,3 +9,8 @@ menuBtn.addEventListener("click", () => {
     menuOpen = false;
   }
 });
+
+window.addEventListener("load", (event) => {
+  const loader = document.querySelector(".loading-screen");
+  loader.classList.add("hidden");
+});

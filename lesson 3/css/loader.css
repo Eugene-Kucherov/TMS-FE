@@ -2,6 +2,7 @@
   --loader-item-size: 20px;
   --loader-item-gap: 10px;
   --animation-duration: 3s;
+  --animation--function: ease-in;
 }
 .loading-screen {
   display: flex;
@@ -38,6 +39,7 @@
   background-color: aquamarine;
   animation-name: first-child;
   animation-duration: var(--animation-duration);
+  animation-timing-function: var(--animation-function);
   animation-iteration-count: infinite;
 }
 .loader-item:nth-child(2) {
@@ -45,6 +47,7 @@
   left: calc(var(--loader-item-size) + var(--loader-item-gap));
   animation-name: second-child;
   animation-duration: var(--animation-duration);
+  animation-timing-function: var(--animation-function);
   animation-iteration-count: infinite;
   background-color: blueviolet;
 }
@@ -53,6 +56,7 @@
   left: 0;
   animation-name: third-child;
   animation-duration: var(--animation-duration);
+  animation-timing-function: var(--animation-function);
   animation-iteration-count: infinite;
   background-color: chartreuse;
 }
@@ -61,6 +65,7 @@
   left: calc(var(--loader-item-size) + var(--loader-item-gap));
   animation-name: forth-child;
   animation-duration: var(--animation-duration);
+  animation-timing-function: var(--animation-function);
   animation-iteration-count: infinite;
   background-color: coral;
 }

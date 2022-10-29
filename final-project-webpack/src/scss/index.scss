@@ -1,0 +1,9 @@
+@import "./base/fonts";
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/mixins";
+
+@import "./components/common.scss";
+@import "./components/header.scss";
+@import "./components/burger.scss";
+@import "./components/main-info.scss";

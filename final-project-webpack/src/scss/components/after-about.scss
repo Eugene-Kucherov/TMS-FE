@@ -1,0 +1,52 @@
+.after-about {
+  background-color: $turquoise;
+  &-wrap {
+    display: flex;
+    justify-content: center;
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
+    &__item {
+      width: 20%;
+      padding: 50px 0;
+      color: #ffffff;
+      text-align: center;
+      @media (max-width: 1024px) {
+        width: 33%;
+        border-bottom: 1px solid #ffffff;
+      }
+      @media (max-width: 768px) {
+        width: 50%;
+      }
+      & span + span {
+        margin-top: 20px;
+      }
+      &-number {
+        display: block;
+        font-size: 4em;
+        font-weight: 700;
+        line-height: $line-height;
+        @media (max-width: 425px) {
+          font-size: 3em;
+        }
+      }
+      &-name {
+        display: block;
+        font-size: 1.5em;
+        font-weight: 500;
+        line-height: $line-height;
+        @media (max-width: 425px) {
+          font-size: 1em;
+        }
+      }
+      &:nth-child(odd) {
+        border-left: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        @media (max-width: 1024px) {
+          border-left: none;
+          border-right: none;
+        }
+      }
+    }
+  }
+}

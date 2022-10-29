@@ -120,9 +120,6 @@
   & .box {
     border-radius: 0;
     background: transparent;
-    font-size: 1.125em;
-    line-height: $line-height;
-    color: #ffffff;
     width: calc((100% - 90px) / 4);
     height: 100%;
     display: flex;
@@ -141,8 +138,7 @@
     text-align: left;
     border-top: 4px solid $yellow;
     & .bigNumber {
-      font-family: "Raleway";
-      font-size: 36px;
+      font-size: 2.25em;
       line-height: $line-height;
       font-weight: 700;
       margin-right: 10px;
@@ -155,6 +151,9 @@
       }
     }
     & .text {
+      font-size: 1.125em;
+      line-height: $line-height;
+      color: #ffffff;
       @media (max-width: 768px) {
         display: none;
       }

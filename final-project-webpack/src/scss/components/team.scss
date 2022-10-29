@@ -1,0 +1,44 @@
+.section-wrap {
+  display: flex;
+  gap: 30px;
+  &__item {
+    width: calc((100% - 60px) / 3);
+    &-image {
+      position: relative;
+      &:hover {
+        & .hover-gradient {
+          z-index: 10;
+          top: -16px;
+          left: -16px;
+          transition: 1s ease;
+        }
+      }
+      & img {
+        width: 100%;
+      }
+      & .hover-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: $gradient;
+        width: 100%;
+        height: 100%;
+        &__content {
+          @include absolute-center;
+          color: #ffffff;
+          text-align: center;
+          & i {
+            font-size: 2em;
+            margin-bottom: 30px;
+          }
+          &-text {
+            font-size: 1.5em;
+            line-height: $line-height;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}

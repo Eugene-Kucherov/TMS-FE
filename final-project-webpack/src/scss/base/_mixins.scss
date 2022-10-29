@@ -28,11 +28,9 @@
   }
 }
 @mixin subtitle {
-  margin-bottom: 70px;
   font-weight: 400;
   font-size: 1.125em;
   line-height: $line-height;
-  text-align: center;
   color: #000000;
 }
 @mixin description-head {

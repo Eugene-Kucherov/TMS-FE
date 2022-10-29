@@ -1,0 +1,64 @@
+.design {
+  position: relative;
+  padding: 50px 0;
+  &__bg {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.5;
+    }
+  }
+}
+.devices {
+  & img {
+    width: 100%;
+  }
+  position: relative;
+  &__tablet {
+    position: absolute;
+    top: 18px;
+    left: 22%;
+    width: 56%;
+    z-index: -7;
+    @media (max-width: 1024px) {
+      top: 9px;
+    }
+  }
+  &__mobile {
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    width: 17%;
+    z-index: 3;
+    @media (max-width: 768px) {
+      top: 50%;
+      left: 60%;
+    }
+    @media (max-width: 425px) {
+      top: 60%;
+      left: 55%;
+    }
+    &-screen {
+      position: absolute;
+      top: 4px;
+      left: 7px;
+      width: 94%;
+      z-index: -1;
+      @media (max-width: 768px) {
+        top: 2px;
+        left: 3px;
+      }
+      & img {
+        border-radius: 15px;
+      }
+    }
+  }
+}

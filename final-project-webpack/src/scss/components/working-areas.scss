@@ -1,5 +1,8 @@
 .working-areas {
   padding: 75px 0;
+  @media (max-width: 425px) {
+    padding: 50px 0;
+  }
 }
 .areas-grid {
   display: grid;
@@ -46,8 +49,8 @@
           font-size: 1.125em;
         }
       }
-      & .subtitle {
-        @include subtitle;
+      & .description {
+        @include description;
         @media (max-width: 1024px) {
           font-size: 0.875em;
         }

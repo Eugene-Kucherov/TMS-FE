@@ -1,0 +1,117 @@
+.service {
+  padding: 100px 0;
+  @media (max-width: 1024px) {
+    padding: 50px 0;
+  }
+}
+.accordion-wrap {
+  display: flex;
+  gap: 30px;
+  @media (max-width: 1024px) {
+    flex-wrap: wrap;
+  }
+  &__image {
+    width: calc((100% - 30px) / 2);
+    @media (max-width: 768px) {
+      width: 80%;
+      margin: 0 auto;
+    }
+    @media (max-width: 425px) {
+      width: 100%;
+    }
+    & img {
+      width: 100%;
+    }
+  }
+  & .accordion-block {
+    width: calc((100% - 30px) / 2);
+    @media (max-width: 768px) {
+      width: 80%;
+      margin: 0 auto;
+    }
+    @media (max-width: 425px) {
+      width: 100%;
+    }
+    & .accordion {
+      padding: 25px 18px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      background: transparent;
+      border: 1px solid $grey;
+      @media (max-width: 1024px) {
+        padding: 20px 15px;
+      }
+      &:not(:first-of-type) {
+        margin-top: 20px;
+        @media (max-width: 1024px) {
+          margin-top: 10px;
+        }
+      }
+      &__icon {
+        width: 42px;
+        @media (max-width: 1024px) {
+          width: 35px;
+        }
+        & img {
+          width: 100%;
+        }
+      }
+      & .description-head {
+        font-family: "Raleway";
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 24px;
+        line-height: $line-height;
+        color: $black;
+        margin-left: 40px;
+        @media (max-width: 1024px) {
+          font-size: 18px;
+          margin-left: 40px;
+        }
+        @media (max-width: 768px) {
+          font-size: 14px;
+          margin-left: 30px;
+        }
+      }
+      &::after {
+        content: "\221F";
+        transform: rotate(-45deg);
+        font-size: 20px;
+        margin-left: auto;
+      }
+      &.active:after {
+        content: "\221F";
+        transform: rotate(135deg);
+      }
+    }
+    & .panel {
+      margin-top: -1px;
+      max-height: 0;
+      border: 1px solid $grey;
+      border-top: none;
+      overflow-y: scroll; //знаю что скролл на тексте, но так не получается
+      transition: 0.2s ease-out;
+      &::-webkit-scrollbar {
+        width: 7px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $turquoise;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: $white-dark;
+      }
+      & .description {
+        @include description;
+        padding: 20px;
+        @media (max-width: 1024px) {
+          font-size: 0.875em;
+        }
+        @media (max-width: 768px) {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}

@@ -1,16 +1,7 @@
 .about {
   padding: 100px 0;
-  text-align: center;
   @media (max-width: 1024px) {
     padding: 50px 0;
-  }
-  & .subtitle {
-    @include subtitle;
-    margin-bottom: 70px;
-    @media (max-width: 1024px) {
-      font-size: 0.875em;
-      margin-bottom: 50px;
-    }
   }
 }
 .section-name {
@@ -31,6 +22,13 @@
     @media (max-width: 768px) {
       width: 50%;
     }
+  }
+}
+.subtitle {
+  @include subtitle;
+  @media (max-width: 1024px) {
+    font-size: 0.875em;
+    margin-bottom: 50px;
   }
 }
 .main-wrap {

@@ -39,4 +39,32 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+// const swiper = new Swiper(".swiper", {
+//   slidesPerView: 1,
+//   spaceBetween: 20,
+//   loop: true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = 150 + "px";
+    }
+  });
+}
+
 import "./demo.js";

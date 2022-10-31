@@ -14,17 +14,17 @@ menuBtn.addEventListener("click", () => {
 
 var menu = ["INTRO", "WORK", "ABOUT", "CONTACTS"];
 
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper-main", {
   slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".main-pagination",
     clickable: true,
     renderBullet: function (index, className) {
       return (
         '\
-          <div class="box ' +
+          <div class="box main-pagination-bullet ' +
         className +
         '">\
           <div class="bigNumber">' +
@@ -39,18 +39,18 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-// const swiper = new Swiper(".swiper", {
-//   slidesPerView: 1,
-//   spaceBetween: 20,
-//   loop: true,
-//   pagination: {
-//     el: ".swiper-pagination",
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
+const swiper1 = new Swiper(".review-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  pagination: {
+    el: ".review-pagination",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 var acc = document.getElementsByClassName("accordion");
 var i;

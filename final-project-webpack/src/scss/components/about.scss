@@ -4,34 +4,7 @@
     padding: 50px 0;
   }
 }
-.section-name {
-  @include section-name;
-  @media (max-width: 1024px) {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
-  }
-}
-.title {
-  @include title;
-  @media (max-width: 1024px) {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
-    padding-bottom: 30px;
-  }
-  &::after {
-    @media (max-width: 768px) {
-      width: 50%;
-    }
-  }
-}
-.subtitle {
-  @include subtitle;
-  @media (max-width: 1024px) {
-    font-size: 0.875rem;
-    margin-bottom: 50px;
-  }
-}
-.section-wrap {
+.about-wrap {
   display: flex;
   gap: 30px;
   @media (max-width: 1024px) {

@@ -8,22 +8,15 @@
   display: grid;
   column-gap: 30px;
   row-gap: 140px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
   @media (max-width: 1024px) {
     column-gap: 25px;
     row-gap: 60px;
   }
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
   &__el {
     display: flex;
     @media (max-width: 768px) {
-      width: 80%;
       margin: 0 auto;
-    }
-    @media (max-width: 425px) {
-      width: 100%;
     }
     &-image {
       width: 70px;
@@ -46,13 +39,13 @@
         display: block;
         margin-bottom: 30px;
         @media (max-width: 1024px) {
-          font-size: 1.125em;
+          font-size: 1.125rem;
         }
       }
       & .description {
         @include description;
         @media (max-width: 1024px) {
-          font-size: 0.875em;
+          font-size: 0.875rem;
         }
       }
     }

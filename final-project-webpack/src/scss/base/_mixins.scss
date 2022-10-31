@@ -1,7 +1,7 @@
 @mixin section-name {
   margin-bottom: 50px;
   font-family: "Kaushan Script";
-  font-size: 1.875em;
+  font-size: 1.875rem;
   line-height: $line-height;
   text-align: center;
   color: $black;
@@ -12,7 +12,7 @@
   margin-bottom: 50px;
   font-weight: 900;
   text-transform: uppercase;
-  font-size: 2.25em;
+  font-size: 2.25rem;
   line-height: $line-height;
   text-align: center;
   color: $black;
@@ -27,7 +27,7 @@
   }
 }
 @mixin subtitle {
-  font-size: 1.125em;
+  font-size: 1.125rem;
   line-height: $line-height;
   color: #000000;
   text-align: center;
@@ -36,25 +36,25 @@
 @mixin description-head {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   line-height: $line-height;
   color: $black;
 }
 @mixin occupation {
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   line-height: $line-height;
   color: $black;
 }
 @mixin description {
-  font-size: 1.125em;
+  font-size: 1.125rem;
   line-height: $line-height;
   color: $black;
 }
 @mixin review {
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   line-height: $line-height;
   font-style: italic;
   color: #a9afb1;

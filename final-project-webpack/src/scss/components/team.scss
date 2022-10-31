@@ -30,13 +30,13 @@
     &-image {
       position: relative;
       margin-bottom: 20px;
+      transition: 1s ease;
       &:hover {
         @media (min-width: 769px) {
           & .hover-gradient {
-            z-index: 10;
+            opacity: 1;
             top: -16px;
             left: -16px;
-            transition: 1s ease;
             @media (max-width: 1024px) {
               top: -6px;
               left: -6px;
@@ -51,7 +51,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        z-index: -1;
+        opacity: 0;
+        z-index: 1;
         background: $gradient;
         width: 100%;
         height: 100%;

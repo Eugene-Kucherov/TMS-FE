@@ -93,7 +93,7 @@
       max-height: 0;
       border: 1px solid $grey;
       border-top: none;
-      overflow-y: scroll; //знаю что скролл на тексте, но так не получается
+      overflow-y: scroll;
       transition: 0.2s ease-out;
       &::-webkit-scrollbar {
         width: 7px;

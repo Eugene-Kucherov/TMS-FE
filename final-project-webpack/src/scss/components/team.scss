@@ -59,7 +59,7 @@
         transition: 1s ease;
         @media (max-width: 768px) {
           background: transparent;
-          z-index: 1;
+          opacity: 1;
         }
         &__content {
           @include absolute-center;

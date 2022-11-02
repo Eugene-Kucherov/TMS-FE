@@ -16,13 +16,12 @@
     width: 100%;
     height: 100%;
     background-size: cover;
-    & img {
-      width: 100%;
+    img {
       height: 100%;
       object-fit: cover;
     }
   }
-  & .section-name {
+  .section-name {
     @include section-name;
     font-size: 4rem;
     color: #ffffff;
@@ -35,7 +34,7 @@
       margin-bottom: 50px;
     }
   }
-  & .subtitle {
+  .subtitle {
     @include subtitle;
     font-size: 2rem;
     color: #ffffff;
@@ -114,7 +113,7 @@
   position: relative;
   display: flex;
   gap: 30px;
-  & .box {
+  .box {
     border-radius: 0;
     background: transparent;
     width: calc((100% - 90px) / 4);
@@ -134,18 +133,22 @@
     margin: 0 !important;
     text-align: left;
     border-top: 4px solid $yellow;
-    &.swiper-pagination-bullet-active::after {
-      content: "";
-      position: absolute;
-      top: -4px;
-      left: 0;
-      border-top: 4px solid $red;
-      width: 25%;
-      @media (max-width: 768px) {
-        width: 100%;
+    opacity: 0.5;
+    &.swiper-pagination-bullet-active {
+      opacity: 1;
+      &::after {
+        content: "";
+        position: absolute;
+        top: -4px;
+        left: 0;
+        border-top: 4px solid $red;
+        width: 25%;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
       }
     }
-    & .bigNumber {
+    .bigNumber {
       font-size: 2.25rem;
       line-height: $line-height;
       font-weight: 700;
@@ -158,7 +161,7 @@
         display: none;
       }
     }
-    & .text {
+    .text {
       font-size: 1.125rem;
       line-height: $line-height;
       color: #ffffff;

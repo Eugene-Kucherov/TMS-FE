@@ -33,7 +33,7 @@
       transition: 1s ease;
       &:hover {
         @media (min-width: 769px) {
-          & .hover-gradient {
+          .hover-gradient {
             opacity: 1;
             top: -16px;
             left: -16px;
@@ -44,10 +44,7 @@
           }
         }
       }
-      & img {
-        width: 100%;
-      }
-      & .hover-gradient {
+      .hover-gradient {
         position: absolute;
         top: 0;
         left: 0;
@@ -69,12 +66,12 @@
             left: 100%;
             transform: translate(-100%, -100%);
           }
-          & div + div {
+          div + div {
             margin-left: 1px;
           }
-          & .social-icon {
+          .social-icon {
             width: 42px;
-            & a {
+            a {
               font-size: 2rem;
               color: $red;
               background-color: $yellow;

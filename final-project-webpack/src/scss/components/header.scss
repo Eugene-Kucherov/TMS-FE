@@ -11,9 +11,6 @@
   @media (max-width: 1024px) {
     width: 65px;
   }
-  & a img {
-    width: 100%;
-  }
 }
 .user-actions {
   display: flex;
@@ -24,7 +21,7 @@
   }
   &__icons {
     display: flex;
-    & a {
+    a {
       font-size: 1.5rem;
       color: #ffffff;
       transition: 0.5s ease;
@@ -42,7 +39,7 @@
 }
 .navigation-list {
   display: flex;
-  & li + li {
+  li + li {
     margin-left: 20px;
     @media (max-width: 1024px) {
       margin-left: 10px;

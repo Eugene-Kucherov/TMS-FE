@@ -30,7 +30,7 @@
     &:hover {
       @media (min-width: 769px) {
         background: $turquoise;
-        & .hover-gradient {
+        .hover-gradient {
           opacity: 1;
           top: -16px;
           left: -16px;
@@ -39,16 +39,15 @@
             left: -6px;
           }
         }
-        & img {
+        img {
           opacity: 0;
         }
       }
     }
-    & img {
-      width: 100%;
+    img {
       transition: 1s ease;
     }
-    & .hover-gradient {
+    .hover-gradient {
       position: absolute;
       top: 0;
       left: 0;
@@ -72,7 +71,7 @@
           left: 0;
           transform: translate(0%, -50%);
         }
-        & i {
+        i {
           font-size: 2rem;
           margin-bottom: 30px;
           @media (max-width: 768px) {

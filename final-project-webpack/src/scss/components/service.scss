@@ -9,22 +9,36 @@
   gap: 30px;
   @media (max-width: 1024px) {
     flex-wrap: wrap;
+    gap: 20px;
   }
   &__image {
     width: calc((100% - 30px) / 2);
+    @media (max-width: 1024px) {
+      width: calc((100% - 20px) / 2);
+    }
     @media (max-width: 768px) {
       width: 80%;
       margin: 0 auto;
+      height: 200px;
     }
     @media (max-width: 425px) {
       width: 100%;
+      height: 150px;
     }
-    & img {
-      width: 100%;
+    img {
+      @media (max-width: 768px) {
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
-  & .accordion-block {
+  .accordion-block {
     width: calc((100% - 30px) / 2);
+    height: 100%;
+    overflow: hidden;
+    @media (max-width: 1024px) {
+      width: calc((100% - 20px) / 2);
+    }
     @media (max-width: 768px) {
       width: 80%;
       margin: 0 auto;
@@ -32,8 +46,8 @@
     @media (max-width: 425px) {
       width: 100%;
     }
-    & .accordion {
-      padding: 25px 18px;
+    .accordion {
+      padding: 20px 18px;
       width: 100%;
       display: flex;
       align-items: center;
@@ -41,7 +55,7 @@
       background: transparent;
       border: 1px solid $grey;
       @media (max-width: 1024px) {
-        padding: 20px 15px;
+        padding: 15px 10px;
       }
       &__icon {
         width: 42px;
@@ -52,9 +66,6 @@
         @media (max-width: 768px) {
           margin-right: 30px;
         }
-        & img {
-          width: 100%;
-        }
       }
       &:not(:first-of-type) {
         margin-top: 20px;
@@ -62,7 +73,7 @@
           margin-top: 10px;
         }
       }
-      & .description-head {
+      .description-head {
         font-family: "Raleway";
         font-weight: 700;
         text-transform: uppercase;
@@ -88,26 +99,31 @@
         transform: rotate(135deg);
       }
     }
-    & .panel {
-      margin-top: -1px;
+    .panel {
       max-height: 0;
+      overflow: hidden;
+      transition: 0.3s ease-out;
       border: 1px solid $grey;
       border-top: none;
-      overflow-y: scroll;
-      transition: 0.2s ease-out;
-      &::-webkit-scrollbar {
-        width: 7px;
-      }
-      &::-webkit-scrollbar-thumb {
-        background-color: $turquoise;
-      }
-      &::-webkit-scrollbar-track {
-        background-color: $white-dark;
-      }
-      & .description {
+      margin-top: -1px;
+      .description {
         @include description;
-        padding: 20px;
+        width: 95%;
+        padding: 0 20px;
+        margin: 20px 0;
+        height: 140px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+          width: 7px;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: $turquoise;
+        }
+        &::-webkit-scrollbar-track {
+          background-color: $white-dark;
+        }
         @media (max-width: 1024px) {
+          height: 100px;
           font-size: 0.875rem;
         }
         @media (max-width: 768px) {

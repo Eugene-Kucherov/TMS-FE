@@ -3,11 +3,15 @@
   @media (max-width: 1024px) {
     padding: 50px 0;
   }
+  @media (max-width: 768px) {
+    padding: 20px 0;
+  }
 }
 
 .team-wrap {
   display: flex;
   gap: 30px;
+  justify-content: center;
   @media (max-width: 1024px) {
     gap: 20px;
   }
@@ -21,8 +25,7 @@
       width: calc((100% - 40px) / 3);
     }
     @media (max-width: 768px) {
-      margin: 0 auto;
-      width: 80%;
+      width: calc((100% - 20px) / 2);
     }
     @media (max-width: 425px) {
       width: 100%;
@@ -31,6 +34,13 @@
       position: relative;
       margin-bottom: 20px;
       transition: 1s ease;
+      @media (max-width: 425px) {
+        height: 250px;
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
       &:hover {
         @media (min-width: 769px) {
           .hover-gradient {
@@ -45,15 +55,6 @@
         }
       }
       .hover-gradient {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        z-index: 1;
-        background: $gradient;
-        width: 100%;
-        height: 100%;
-        transition: 1s ease;
         @media (max-width: 768px) {
           background: transparent;
           opacity: 1;

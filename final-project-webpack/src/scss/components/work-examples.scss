@@ -1,10 +1,7 @@
 .work-examples {
-  padding: 100px 0;
+  padding: 75px 0;
   @media (max-width: 1024px) {
-    padding: 50px 0;
-  }
-  @media (max-width: 768px) {
-    padding: 20px 0;
+    padding: 30px 0;
   }
 }
 .examples-grid {
@@ -12,6 +9,10 @@
   grid-template-columns: repeat(4, 1fr);
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 290px);
+  }
+  @media (max-width: 425px) {
+    grid-template-rows: repeat(5, 152px);
   }
   &__el {
     position: relative;
@@ -19,6 +20,9 @@
       height: 100%;
       img {
         height: 100%;
+        @media (max-width: 768px) {
+          object-fit: cover;
+        }
       }
     }
     &:nth-child(3) {

@@ -26,8 +26,11 @@ body {
     padding-bottom: 30px;
   }
   &::after {
+    @media (max-width: 1024px) {
+      width: 148px;
+    }
     @media (max-width: 768px) {
-      width: 50%;
+      width: 132px;
     }
   }
 }
@@ -57,6 +60,7 @@ body {
 }
 .occupation {
   @include occupation;
+  display: block;
   @media (max-width: 1024px) {
     font-size: 0.875rem;
   }

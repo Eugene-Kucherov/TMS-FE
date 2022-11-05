@@ -1,5 +1,8 @@
 .header {
   margin-bottom: 100px;
+  @media (max-width: 425px) {
+    margin-bottom: 50px;
+  }
 }
 .header-wrap {
   display: flex;
@@ -8,6 +11,7 @@
 }
 .header-logo {
   width: 100px;
+  z-index: 10;
   @media (max-width: 1024px) {
     width: 65px;
   }
@@ -36,31 +40,69 @@
       }
     }
   }
-}
-.navigation-list {
-  display: flex;
-  li + li {
-    margin-left: 20px;
-    @media (max-width: 1024px) {
-      margin-left: 10px;
+  .navigation-list {
+    display: flex;
+    li + li {
+      margin-left: 20px;
+      @media (max-width: 1024px) {
+        margin-left: 10px;
+      }
+    }
+    &__item a {
+      padding: 5px 20px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      line-height: $line-height;
+      text-transform: uppercase;
+      color: #ffffff;
+      border-bottom: 1px solid transparent;
+      transition: 0.5s ease;
+      @media (max-width: 1024px) {
+        font-size: 0.8rem;
+        padding: 5px 15px;
+      }
+      &:hover {
+        color: $orange;
+        border-bottom: 1px solid $orange;
+      }
     }
   }
-  &__item a {
-    padding: 5px 20px;
-    font-size: 0.875rem;
-    font-weight: 600;
-    line-height: $line-height;
-    text-transform: uppercase;
-    color: #ffffff;
-    border-bottom: 1px solid transparent;
-    transition: 0.5s ease;
-    @media (max-width: 1024px) {
-      font-size: 0.8rem;
-      padding: 5px 15px;
+}
+
+.navigation-mobile {
+  display: none;
+  padding: 100px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  justify-content: center;
+  .hover-gradient {
+    opacity: 1; //через бэкграунд не получилось
+  }
+  .navigation-list {
+    display: block;
+    text-align: center;
+    width: 80%;
+    z-index: inherit;
+    @media (max-width: 425px) {
+      width: 100%;
     }
-    &:hover {
-      color: $orange;
-      border-bottom: 1px solid $orange;
+    &__item a {
+      padding: 20px 0;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: $line-height;
+      text-transform: uppercase;
+      color: #ffffff;
+      @media (max-width: 425px) {
+        font-size: 0.8rem;
+      }
     }
+  }
+  &.opened {
+    display: flex;
   }
 }

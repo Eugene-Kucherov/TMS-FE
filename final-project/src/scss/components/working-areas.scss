@@ -13,6 +13,9 @@
     column-gap: 25px;
     row-gap: 60px;
   }
+  @media (max-width: 768px) {
+    row-gap: 45px;
+  }
   &__el {
     display: flex;
     @media (max-width: 768px) {
@@ -30,6 +33,9 @@
       @media (max-width: 1024px) {
         padding: 10px;
         width: calc(100% - 60px);
+      }
+      .description-head {
+        margin-bottom: 30px;
       }
     }
   }

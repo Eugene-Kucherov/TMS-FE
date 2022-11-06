@@ -46,8 +46,6 @@ body {
 }
 .description-head {
   @include description-head;
-  display: block;
-  margin-bottom: 30px;
   @media (max-width: 1024px) {
     font-size: 1.125rem;
   }

@@ -7,12 +7,12 @@
 .about-wrap {
   display: flex;
   gap: 30px;
+  justify-content: center;
   @media (max-width: 1024px) {
     gap: 20px;
   }
   @media (max-width: 768px) {
     flex-wrap: wrap;
-    justify-content: center;
   }
   &__item {
     width: calc((100% - 60px) / 3);

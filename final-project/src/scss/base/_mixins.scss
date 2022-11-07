@@ -22,7 +22,8 @@
     left: 50%;
     transform: translateX(-50%);
     content: "";
-    border-bottom: 4px solid $red;
+    height: 4px;
+    background-color: $red;
     width: 170px;
   }
 }

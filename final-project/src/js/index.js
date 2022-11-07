@@ -1,3 +1,9 @@
+//loader
+window.addEventListener("load", (event) => {
+  const loader = document.querySelector(".loader-screen");
+  loader.classList.add("hidden");
+});
+
 // бургер
 const menuBtn = document.querySelector(".menu-btn");
 const mobileNavigation = document.querySelector(".navigation-mobile");

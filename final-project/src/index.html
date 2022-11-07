@@ -12,6 +12,18 @@
 </head>
 
 <body>
+  <div class="loader-screen">
+    <ul class="loader">
+      <li class="loader__item">L</li>
+      <li class="loader__item">O</li>
+      <li class="loader__item">A</li>
+      <li class="loader__item">D</li>
+      <li class="loader__item">I</li>
+      <li class="loader__item">N</li>
+      <li class="loader__item">G</li>
+    </ul>
+    <div class="loader-mobile"></div>
+  </div>
   <section class="main-info">
     <div class="main-info__bg"><img src="./images/main-info-bg.jpg" alt=""></div>
     <div class="container">
@@ -21,10 +33,10 @@
           <div class="user-actions">
             <nav class="navigation">
               <ul class="navigation-list">
-                <li class="navigation-list__item"><a href="#features">About</a></li>
-                <li class="navigation-list__item"><a href="#about">service</a></li>
-                <li class="navigation-list__item"><a href="#pricing">work</a></li>
-                <li class="navigation-list__item"><a href="#reviews">blog</a></li>
+                <li class="navigation-list__item"><a href="#about">About</a></li>
+                <li class="navigation-list__item"><a href="#service">service</a></li>
+                <li class="navigation-list__item"><a href="#work">work</a></li>
+                <li class="navigation-list__item"><a href="#blog">blog</a></li>
                 <li class="navigation-list__item"><a href="#contact">Contact</a></li>
               </ul>
             </nav>
@@ -41,10 +53,10 @@
             <div class="hover-gradient"></div>
             <div class="main-info__bg"><img src="./images/main-info-bg.jpg" alt=""></div>
             <ul class="navigation-list">
-              <li class="navigation-list__item"><a href="#features">About</a></li>
-              <li class="navigation-list__item"><a href="#about">service</a></li>
-              <li class="navigation-list__item"><a href="#pricing">work</a></li>
-              <li class="navigation-list__item"><a href="#reviews">blog</a></li>
+              <li class="navigation-list__item"><a href="#about">About</a></li>
+              <li class="navigation-list__item"><a href="#service">service</a></li>
+              <li class="navigation-list__item"><a href="#work">work</a></li>
+              <li class="navigation-list__item"><a href="#blog">blog</a></li>
               <li class="navigation-list__item"><a href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -89,7 +101,7 @@
       </div>
     </div>
   </section>
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <h2 class="section-name">What we do</h2>
       <h3 class="title">story about us</h3>
@@ -216,7 +228,7 @@
       </div>
     </div>
   </section>
-  <section class="service">
+  <section class="service" id="service">
     <div class="container">
       <h2 class="section-name">Service</h2>
       <h3 class="title">what we do</h3>
@@ -390,7 +402,7 @@
       </div>
     </div>
   </section>
-  <section class="work-examples">
+  <section class="work-examples" id="work">
     <div class="container">
       <h2 class="section-name">What we do</h2>
       <h3 class="title">some of our work</h3>
@@ -560,7 +572,7 @@
       </div>
     </div>
   </section>
-  <section class="blog">
+  <section class="blog" id="blog">
     <div class="container">
       <h2 class="section-name">Our Stories</h2>
       <h3 class="title">Latest blog</h3>
@@ -621,6 +633,9 @@
       <h3 class="title title--red">Latest blog</h3>
     </div>
   </section>
+  <footer class="footer" id="contact">
+
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/index.js"></script>
 </body>

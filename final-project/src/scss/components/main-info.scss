@@ -86,8 +86,13 @@
 }
 
 .button {
-  @include description-head;
+  font-family: "Raleway";
   padding: 20px 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: $line-height;
+  color: $black;
   cursor: pointer;
   border: 4px solid #ffffff;
   display: block;

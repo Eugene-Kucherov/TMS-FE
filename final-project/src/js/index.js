@@ -27,6 +27,10 @@ const swiper = new Swiper(".swiper-main", {
   slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: true,
+  },
   pagination: {
     el: ".main-pagination",
     clickable: true,
@@ -53,6 +57,10 @@ const swiper1 = new Swiper(".review-swiper", {
   slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true,
+  },
   pagination: {
     el: ".review-pagination",
   },

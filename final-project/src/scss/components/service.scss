@@ -13,6 +13,7 @@
   }
   &__image {
     width: calc((100% - 30px) / 2);
+    overflow: hidden;
     @media (max-width: 1024px) {
       width: calc((100% - 20px) / 2);
     }
@@ -26,6 +27,12 @@
       height: 150px;
     }
     img {
+      @media (min-width: 1025px) {
+        transition: 1s ease;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
       @media (max-width: 768px) {
         height: 100%;
         object-fit: cover;

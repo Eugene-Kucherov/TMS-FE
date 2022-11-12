@@ -3,6 +3,12 @@
   padding-bottom: 120px;
   background-color: rgba(37, 43, 73, 0.8);
   text-align: center;
+  @media (max-width: 1024px) {
+    height: 800px;
+  }
+  @media (max-width: 768px) {
+    height: 650px;
+  }
   @media (max-width: 425px) {
     height: 575px;
   }
@@ -19,43 +25,65 @@
       object-fit: cover;
     }
   }
-}
-.title {
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: $h1;
-  line-height: $line-height;
-  text-transform: uppercase;
-  @media (max-width: 1024px) {
-    font-size: $h1tablet;
-  }
-  @media (max-width: 768px) {
-    font-size: $h1mobile;
-  }
-}
-.subtitle {
-  margin-bottom: 80px;
-  font-size: $h4;
-  line-height: $line-height;
-  @media (max-width: 1024px) {
-    font-size: $h4tablet;
-  }
-}
-.button {
-  padding: 20px 70px;
-  font-family: "Raleway", serif;
-  font-size: $h4;
-  font-weight: 900;
-  color: $white;
-  background-color: $red;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: none;
-  &:hover {
-    background-color: $reddark;
-  }
-  &:active {
-    background-color: $red;
-    box-shadow: 4px 4px 30px #ff4343;
+  &-content {
+    @media (max-width: 1024px) {
+      width: 80%;
+      margin: 0 auto;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    &__title {
+      margin-bottom: 30px;
+      font-weight: 900;
+      font-size: $h1;
+      line-height: $line-height;
+      text-transform: uppercase;
+      @media (max-width: 1024px) {
+        font-size: $h1tablet;
+        margin-bottom: 60px;
+      }
+      @media (max-width: 768px) {
+        font-size: $h1mobile;
+        margin-bottom: 30px;
+      }
+    }
+    &__subtitle {
+      margin-bottom: 80px;
+      font-size: $h4;
+      line-height: $line-height;
+      @media (max-width: 1024px) {
+        font-size: $h4tablet;
+        margin-bottom: 90px;
+      }
+      @media (max-width: 768px) {
+        font-size: $h4mobile;
+        margin-bottom: 50px;
+      }
+    }
+    .button {
+      padding: 20px 70px;
+      font-family: "Raleway", serif;
+      font-size: $h4;
+      font-weight: 900;
+      color: $white;
+      background-color: $red;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      &:hover {
+        background-color: $reddark;
+      }
+      &:active {
+        background-color: $red;
+        box-shadow: 4px 4px 30px #ff4343;
+      }
+      @media (max-width: 1024px) {
+        padding: 20px 45px;
+      }
+      @media (max-width: 768px) {
+        padding: 20px 30px;
+      }
+    }
   }
 }

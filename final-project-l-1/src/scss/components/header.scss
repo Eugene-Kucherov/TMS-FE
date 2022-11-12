@@ -5,6 +5,10 @@
     margin-bottom: 150px;
   }
   @media (max-width: 768px) {
+    margin-bottom: 100px;
+    padding: 30px;
+  }
+  @media (max-width: 425px) {
     margin-bottom: 50px;
   }
   &-wrap {
@@ -12,15 +16,17 @@
     justify-content: space-between;
     align-items: center;
     &__logo {
+      display: flex;
       z-index: 10;
-      a {
-        display: flex;
-      }
-      @media (max-width: 1024px) {
-        width: 230px;
-      }
+      width: 180px;
       @media (max-width: 768px) {
-        width: 130px;
+        width: 100px;
+      }
+      img:first-child {
+        width: 66.7%;
+      }
+      img:last-child {
+        width: 33.3%;
       }
     }
   }
@@ -38,23 +44,28 @@
       width: 134px;
       padding: 35px 0;
       text-align: center;
-      &:after {
-        content: "";
-        position: absolute;
-        top: calc(100% - 3px);
-        right: 0;
-        width: 0;
-        height: 3px;
-        background-color: $grey;
-        transition: width 0.5s ease-out;
-      }
-      &:hover:after {
-        width: 100%;
-      }
       &:active {
         color: $reddark;
         &:after {
           background-color: $reddark;
+        }
+      }
+      @media (max-width: 1024px) {
+        width: 110px;
+      }
+      @media (min-width: 1025px) {
+        &:after {
+          content: "";
+          position: absolute;
+          top: calc(100% - 3px);
+          right: 0;
+          width: 0;
+          height: 3px;
+          background-color: $grey;
+          transition: width 0.5s ease-out;
+        }
+        &:hover:after {
+          width: 100%;
         }
       }
     }
@@ -62,7 +73,7 @@
 }
 
 .navigation-mobile {
-  padding-top: 80px;
+  padding-top: 100px;
   display: none;
   position: absolute;
   left: 0;
@@ -85,8 +96,16 @@
     margin: 0 auto;
     &__item a {
       @include h6;
-      text-align: left;
       padding: 20px 0;
+      &:active {
+        color: $reddark;
+      }
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+      }
+      @media (max-width: 425px) {
+        font-size: $h6mobile;
+      }
     }
   }
   &.opened {

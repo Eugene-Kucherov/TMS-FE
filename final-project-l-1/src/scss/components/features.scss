@@ -1,0 +1,50 @@
+.features {
+  padding: 115px 0;
+  @media (max-width: 1024px) {
+    padding: 75px 0;
+  }
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
+  &-grid {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 90px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    @media (max-width: 1024px) {
+      column-gap: 20px;
+      row-gap: 50px;
+    }
+    @media (max-width: 768px) {
+      row-gap: 40px;
+    }
+    &__el {
+      text-align: center;
+      &-image {
+        width: 100px;
+        margin: 0 auto 40px;
+        @media (max-width: 1024px) {
+          width: 85px;
+          margin-bottom: 30px;
+        }
+        @media (max-width: 768px) {
+          width: 75px;
+        }
+      }
+      .description-head {
+        @include h4;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        @media (max-width: 1024px) {
+          margin-bottom: 20px;
+        }
+        @media (max-width: 768px) {
+          margin-bottom: 10px;
+        }
+      }
+      .description {
+        @include h5;
+      }
+    }
+  }
+}

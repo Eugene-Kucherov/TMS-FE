@@ -1,0 +1,27 @@
+@mixin h4 {
+  font-weight: 900;
+  font-size: $h4;
+  color: $black;
+  @media (max-width: 1024px) {
+    font-size: $h4tablet;
+  }
+}
+@mixin h5 {
+  font-size: $h5;
+  color: $greydark;
+  @media (max-width: 1024px) {
+    font-size: $h5tablet;
+  }
+}
+@mixin h6 {
+  font-weight: 700;
+  font-size: $h6;
+  color: $white;
+  text-transform: uppercase;
+  @media (max-width: 1024px) {
+    font-size: $h6tablet;
+  }
+  @media (max-width: 768px) {
+    font-size: $h6mobile;
+  }
+}

@@ -1,0 +1,26 @@
+.download {
+  padding: 115px 0;
+  text-align: center;
+  @media (max-width: 1024px) {
+    padding: 75px 0;
+  }
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: $h3;
+    color: #000000;
+    @media (max-width: 1024px) {
+      font-size: $h3tablet;
+    }
+  }
+  &__subtitle {
+    @include h5;
+    margin-bottom: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+  }
+}

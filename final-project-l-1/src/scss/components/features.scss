@@ -32,7 +32,6 @@
         }
       }
       .description-head {
-        @include h4;
         text-transform: uppercase;
         margin-bottom: 30px;
         @media (max-width: 1024px) {
@@ -41,9 +40,6 @@
         @media (max-width: 768px) {
           margin-bottom: 10px;
         }
-      }
-      .description {
-        @include h5;
       }
     }
   }

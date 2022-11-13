@@ -35,7 +35,6 @@
         }
       }
       .description-head {
-        @include h4;
         color: $black;
         font-weight: 700;
         margin-bottom: 10px;
@@ -51,7 +50,6 @@
         }
       }
       .description {
-        @include h5;
         margin-bottom: 40px;
         @media (max-width: 768px) {
           margin-bottom: 55px;

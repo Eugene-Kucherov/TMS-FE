@@ -30,6 +30,15 @@
       }
       &-image {
         margin-bottom: 30px;
+        overflow: hidden;
+        img {
+          @media (min-width: 1025px) {
+            transition: 1s ease;
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+        }
         @media (max-width: 1024px) {
           margin-bottom: 25px;
         }

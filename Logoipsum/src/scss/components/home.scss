@@ -1,0 +1,41 @@
+.home {
+  padding: 70px 0;
+  &-wrap {
+    display: flex;
+    align-items: center;
+    &-info {
+      width: 45%;
+      margin-right: 75px;
+      &__head {
+        font-size: 5rem;
+        color: $black;
+        margin-bottom: 30px;
+      }
+      &__description {
+        @include description;
+        margin-bottom: 50px;
+      }
+      &__actions {
+        display: flex;
+        align-items: center;
+        &-button {
+          @include button;
+          background-color: $blue;
+          padding-left: 60px;
+          padding-right: 60px;
+          margin-right: 40px;
+          &:active {
+            background-color: #38197a;
+          }
+        }
+        a {
+          font-size: 3.75rem;
+          color: $black;
+          &:active {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+}

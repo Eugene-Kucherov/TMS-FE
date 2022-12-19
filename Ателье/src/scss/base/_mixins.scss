@@ -1,0 +1,33 @@
+@mixin h2 {
+  font-family: "RubikMonoOne", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  text-transform: uppercase;
+}
+@mixin h3 {
+  font-family: "RubikMonoOne", sans-serif;
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+@mixin p1 {
+  font-size: 1.375rem;
+  line-height: 2.125rem;
+}
+@mixin p2 {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+}
+@mixin button {
+  font-family: "RobotoMono", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  color: $black;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  letter-spacing: 1px;
+}

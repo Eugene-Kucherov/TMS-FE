@@ -4,6 +4,10 @@
   font-size: 2.5rem;
   line-height: 3.25rem;
   text-transform: uppercase;
+  @media (max-width: 640px) {
+    font-size: 1.5rem;
+    line-height: 1.65rem;
+  }
 }
 @mixin h3 {
   font-family: "RubikMonoOne", sans-serif;

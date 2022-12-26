@@ -12,3 +12,16 @@ menuBtn.addEventListener("click", () => {
     mobileNavigation.classList.remove("opened");
   }
 });
+
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  breakpoints: {
+    1025: {
+      slidesPerView: 3,
+    },
+    641: {
+      slidesPerView: 2,
+    },
+  },
+});

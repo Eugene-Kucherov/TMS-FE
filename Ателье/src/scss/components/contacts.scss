@@ -1,0 +1,76 @@
+.contacts {
+  padding: 150px 0;
+  background-color: $orange;
+  @media (max-width: 1440px) {
+    padding: 100px 0;
+  }
+  @media (max-width: 640px) {
+    padding: 50px 0;
+  }
+  .h2 {
+    @include h2;
+    margin-bottom: 90px;
+    @media (max-width: 1440px) {
+      margin-bottom: 50px;
+    }
+    @media (max-width: 640px) {
+      margin-bottom: 30px;
+    }
+  }
+  &-wrap {
+    margin: 0 auto 50px;
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    @media (max-width: 1440px) {
+      width: 100%;
+      margin: 0 auto 20px;
+    }
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+    @media (max-width: 640px) {
+      gap: 0;
+    }
+    &__item {
+      width: calc((100% - 40px) / 3);
+      padding: 30px 0;
+      background-color: $bgcolor;
+      border: 1px solid $black;
+      color: $black;
+      text-align: center;
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
+      &:hover {
+        color: $yellow;
+        border-color: $yellow;
+      }
+      &:active {
+        color: $orange;
+        border-color: $orange;
+      }
+      i {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+      .p2 {
+        @include p2;
+        text-transform: uppercase;
+        display: block;
+      }
+    }
+  }
+  .p1 {
+    @include p1;
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    @media (max-width: 1440px) {
+      width: 75%;
+    }
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+}

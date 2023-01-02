@@ -2,23 +2,26 @@
   position: relative;
   padding: 150px 0;
   background-color: $yellow;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 60px;
+    transform: translateY(-50%);
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: $black;
+    @media (max-width: 640px) {
+      display: none;
+    }
+  }
   @media (max-width: 1440px) {
     padding: 100px 0;
   }
   @media (max-width: 640px) {
     padding: 50px 0;
   }
-  // ::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   right: 60px;
-  //   transform: translateY(-50%);
-  //   width: 72px;
-  //   height: 72px;
-  //   border-radius: 50%;
-  //   background-color: $black;
-  // }
   .h2 {
     @include h2;
     color: $bgcolor;

@@ -159,6 +159,12 @@
         font-size: 0.875rem;
         line-height: 1.25rem;
         color: black;
+        &:hover {
+          color: $yellow;
+        }
+        &:active {
+          color: $orange;
+        }
       }
     }
   }

@@ -47,6 +47,9 @@
         @include button;
         padding: 10px 40px;
         background-color: $yellow;
+        &:active {
+          background-color: $orange;
+        }
         @media (max-width: 1440px) {
           display: none;
         }

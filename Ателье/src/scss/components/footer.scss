@@ -1,0 +1,141 @@
+.footer {
+  position: relative;
+  padding: 75px 0 150px;
+  @media (max-width: 1440px) {
+    padding: 50px 0 100px;
+  }
+  @media (max-width: 640px) {
+    padding: 25px 0 100px;
+  }
+  &__bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    @media (max-width: 640px) {
+      height: 50px;
+    }
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-wrap {
+    display: flex;
+    gap: 30px;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+    &__subscribe {
+      width: 40%;
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
+      .h3 {
+        @include h3;
+        margin-bottom: 45px;
+      }
+      &-email {
+        @include p2;
+        margin-bottom: 20px;
+        font-family: "RobotoMono", sans-serif;
+        font-weight: 400;
+        background: transparent;
+        display: block;
+        padding: 10px 25px;
+        width: 80%;
+        color: $black;
+        border: 1px solid $yellow;
+        @media (max-width: 1440px) {
+          width: 100%;
+        }
+        @media (max-width: 1024px) {
+          display: inline;
+          width: calc((100% - 20px) / 2);
+        }
+        @media (max-width: 640px) {
+          display: block;
+          width: 100%;
+        }
+      }
+      &-button {
+        @include button;
+        padding: 10px 0;
+        width: 80%;
+        background-color: $yellow;
+        &:active {
+          background-color: $orange;
+        }
+        @media (max-width: 1440px) {
+          width: 100%;
+        }
+        @media (max-width: 1024px) {
+          width: calc((100% - 20px) / 2);
+        }
+        @media (max-width: 640px) {
+          width: 100%;
+        }
+      }
+    }
+    &-grid {
+      width: calc(60% - 20px);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 65px;
+      column-gap: 30px;
+      @media (max-width: 1440px) {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+        column-gap: 20px;
+      }
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
+      @media (max-width: 640px) {
+        row-gap: 30px;
+        grid-template-columns: 1fr;
+      }
+      &__item {
+        &:last-child {
+          @include p2;
+          text-align: center;
+          align-self: flex-end;
+          grid-column: 1 / 4;
+          grid-row: 2;
+          @media (max-width: 1440px) {
+            grid-column: 2;
+            grid-row: 2;
+            text-align: left;
+          }
+          @media (max-width: 640px) {
+            grid-column: 1;
+            grid-row: 4;
+          }
+        }
+        .p1 {
+          @include p1;
+          padding-left: 10px;
+          margin-bottom: 20px;
+          @media (max-width: 1440px) {
+            padding-left: 0;
+          }
+        }
+        &-list {
+          li + li {
+            margin-top: 10px;
+          }
+          &-link a {
+            @include p2;
+            color: $black;
+            &:hover {
+              color: $yellow;
+            }
+            &:active {
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}

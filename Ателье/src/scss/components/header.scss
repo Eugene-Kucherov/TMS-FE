@@ -17,11 +17,28 @@
           margin-left: 30px;
         }
         &-item a {
+          position: relative;
           font-size: 1.25rem;
           line-height: 2.5rem;
           text-transform: uppercase;
           color: $black;
           letter-spacing: 1.5px;
+          &:hover {
+            color: $orange;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: $orange;
+            transition: width 0.5s ease-out;
+          }
+          &:hover:after {
+            width: 100%;
+          }
         }
       }
     }

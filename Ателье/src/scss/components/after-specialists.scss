@@ -1,0 +1,15 @@
+.after-specialists {
+  padding: 150px 0;
+  background-color: $orange;
+  .h2 {
+    @include h2;
+    margin-bottom: 90px;
+  }
+  &-wrap {
+    display: flex;
+    gap: 20px;
+    &__item {
+      width: calc((100% - 40px) / 3);
+    }
+  }
+}

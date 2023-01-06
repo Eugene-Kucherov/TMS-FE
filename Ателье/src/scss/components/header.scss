@@ -40,6 +40,10 @@
             width: 100%;
           }
         }
+        &-item--target a {
+          color: $orange;
+          border-bottom: 1px solid $orange;
+        }
       }
     }
     &-actions {
@@ -48,6 +52,9 @@
       &__icon {
         font-size: 1.5rem;
         color: $black;
+        &--target {
+          color: $orange;
+        }
       }
       &__icon:not(:last-child) {
         margin-right: 70px;

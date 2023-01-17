@@ -1,0 +1,78 @@
+.clothes-collection {
+  padding: 150px 0 75px;
+  &-wrap {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+    &__item {
+      width: calc((100% - 40px) / 3);
+      &-image {
+        margin-bottom: 15px;
+      }
+      &-description {
+        @include p1;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+      }
+      &-button {
+        @include button;
+        padding: 10px 0;
+        width: 100%;
+        background-color: $yellow;
+        &:active {
+          background-color: $bgcolor;
+        }
+      }
+    }
+    &__item--text {
+      padding: 150px 0 0 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .p1 {
+        @include p1;
+      }
+      a {
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: black;
+        &:hover {
+          color: $yellow;
+        }
+        &:active {
+          color: $orange;
+        }
+      }
+    }
+  }
+  &-navigation {
+    text-align: center;
+    button {
+      @include p2;
+      cursor: pointer;
+
+      background: transparent;
+    }
+    &__before {
+      color: $yellow;
+      border: none;
+    }
+    &__page {
+      font-family: "RobotoMono", sans-serif;
+      width: 42px;
+      height: 42px;
+      border: 2px solid $yellow;
+    }
+    &__ellipsis {
+      color: $yellow;
+      border: none;
+    }
+    &__next {
+      color: $yellow;
+      border: none;
+    }
+  }
+}

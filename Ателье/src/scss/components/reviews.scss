@@ -1,0 +1,106 @@
+.reviews {
+  padding: 20px 0 75px;
+  position: relative;
+  .way {
+    @include p2;
+    display: block;
+    margin-bottom: 50px;
+  }
+  .h2 {
+    @include h2;
+    margin-bottom: 90px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background-color: $yellow;
+    opacity: 0.5;
+    z-index: -1;
+    @media (max-width: 1440px) {
+      width: 500px;
+      height: 500px;
+    }
+    @media (max-width: 640px) {
+      width: 320px;
+      height: 320px;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: $black;
+  }
+  &-block {
+    margin-bottom: 50px;
+    &__item:not(:first-child) {
+      margin-top: 20px;
+    }
+    &__item:nth-child(odd) {
+      flex-direction: row-reverse;
+      margin-left: auto;
+    }
+    &__item {
+      width: 50%;
+      height: 275px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      &-image {
+        width: calc((100% - 20px) / 2);
+        height: inherit;
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &-text {
+        width: calc((100% - 20px) / 2);
+        .p1 {
+          @include p1;
+          margin-bottom: 10px;
+        }
+        .p2 {
+          @include p2;
+        }
+      }
+    }
+  }
+  &-navigation {
+    text-align: center;
+    button {
+      @include p2;
+      cursor: pointer;
+
+      background: transparent;
+    }
+    &__before {
+      color: $yellow;
+      border: none;
+    }
+    &__page {
+      font-family: "RobotoMono", sans-serif;
+      width: 42px;
+      height: 42px;
+      border: 2px solid $yellow;
+    }
+    &__ellipsis {
+      color: $yellow;
+      border: none;
+    }
+    &__next {
+      color: $yellow;
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.contacts {
+  padding: 20px 0 75px;
+  .way {
+    @include p2;
+    display: block;
+    margin-bottom: 50px;
+  }
+  .h2 {
+    @include h2;
+    margin-bottom: 90px;
+  }
+  &-wrap {
+    display: flex;
+    gap: 20px;
+    &__info {
+      width: 40%;
+      div {
+        margin-bottom: 45px;
+        p + p {
+          margin-top: 5px;
+        }
+      }
+      .p1 {
+        @include p1;
+      }
+      .p2 {
+        @include p2;
+      }
+      &-button {
+        @include button;
+        padding: 10px 85px;
+        background-color: $yellow;
+        &:active {
+          background-color: $orange;
+        }
+        @media (max-width: 1440px) {
+          width: 100%;
+        }
+        @media (max-width: 1024px) {
+          width: calc((100% - 20px) / 2);
+        }
+        @media (max-width: 640px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
